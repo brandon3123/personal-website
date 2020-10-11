@@ -15,8 +15,6 @@ import IconButton from "@material-ui/core/IconButton";
 import CardHeader from "@material-ui/core/CardHeader";
 import Fab from "@material-ui/core/Fab";
 
-
-
 class Projects extends React.Component {
 
     state = {
@@ -85,9 +83,7 @@ class Projects extends React.Component {
                 )}
             </Grid>
         </Container>
-        // return <div>{JSON.stringify(this.state.projects, null, 2)}</div>
     }
-
 }
 
 Projects.defaultProps = {
