@@ -2,9 +2,18 @@
   text-align: center;
 }
 
+.githubLink:hover {
+  opacity: 0.5;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (prefers-reduced-motion: no-preference) {
