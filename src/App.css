@@ -2,8 +2,15 @@
   text-align: center;
 }
 
-.githubLink:hover {
-  opacity: 0.5;
+.cardFooter .githubLink:hover {
+  background-color: transparent;
+  border: 2px solid #6cc644;
+  transition: 0.3s;
+}
+
+.cardFooter .githubLink {
+  color: black;
+  background-color: #6cc644;
 }
 
 .App-logo {

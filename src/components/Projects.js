@@ -41,6 +41,9 @@ class Projects extends React.Component {
                             <Typography color={"textPrimary"} variant={"h5"}>
                                 {project.name}
                             </Typography>
+                            <Typography color={"textSecondary"}>
+                                {project.language}
+                            </Typography>
                         </Grid>
                         <Grid item>
                             <CodeIcon color={"disabled"}></CodeIcon>
@@ -53,20 +56,12 @@ class Projects extends React.Component {
                     {project.description}
                 </Typography>
                 <br/>
-                <Typography>
-
-                    {project.language}
-                </Typography>
             </CardContent>
             <Divider light={true}/>
 
             <CardActions className={'cardFooter'}>
-                <Button
-                    variant={"contained"}
-                    href={project.html_url}
-                    startIcon={<GitHubIcon/>}
-                >
-                    More
+                <Button className={'githubLink'} variant={"contained"} href={project.html_url}>
+                    <GitHubIcon/>
                 </Button>
             </CardActions>
         </Card>
