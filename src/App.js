@@ -5,19 +5,22 @@ import Experience from './components/Experience';
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Grid from "@material-ui/core/Grid";
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
       <div>
-          <Grid spacing={1} container justify={"center"}>
-              <Grid item lg={6}>
-                  <About />
-              </Grid>
-              <Grid item lg={6}>
-                  <Skills />
-              </Grid>
-          </Grid>
-        <Projects />
+          <SideBar />
+        {/*  <Grid spacing={1} container justify={"center"}>*/}
+        {/*      <Grid item lg={6}>*/}
+        {/*          <About />*/}
+        {/*      </Grid>*/}
+        {/*      <Grid item lg={6}>*/}
+        {/*          <Skills />*/}
+        {/*      </Grid>*/}
+        {/*  </Grid>*/}
+        {/*  <Experience />*/}
+        {/*<Projects />*/}
       </div>
   );
 }

@@ -34,8 +34,7 @@ class Projects extends React.Component {
 
     projectCard(project) {
         return <Card variant={"outlined"} >
-            <CardContent>
-                <Box pb={2}>
+            <CardContent >
                     <Grid container justify={"space-between"}>
                         <Grid item >
                             <Typography color={"textPrimary"} variant={"h5"}>
@@ -49,7 +48,6 @@ class Projects extends React.Component {
                             <CodeIcon color={"disabled"}></CodeIcon>
                         </Grid>
                     </Grid>
-                </Box>
                 <Divider light={true}/>
                 <br/>
                 <Typography>
@@ -59,7 +57,7 @@ class Projects extends React.Component {
             </CardContent>
             <Divider light={true}/>
 
-            <CardActions className={'cardFooter'}>
+            <CardActions className={'cardFooter'} style={{backgroundColor: "#7f8fa6"}}>
                 <Button className={'githubLink'} variant={"contained"} href={project.html_url}>
                     <GitHubIcon/>
                 </Button>
@@ -68,16 +66,27 @@ class Projects extends React.Component {
     }
 
     render() {
-        return <Container>
-            <Grid container spacing={2} justify={"center"}>
-                {this.state.projects.map(project => {
-                        return <Grid item xs={12} lg={4}>
-                            {this.projectCard(project)}
-                        </Grid>
-                    }
-                )}
-            </Grid>
-        </Container>
+        return (
+            <Container>
+                <Typography variant={"h2"}>Projects</Typography>
+                <Divider variant={"middle"}/>
+                <br/>
+                <Typography>
+                    I like to tinker and love to learn. Below are projects from my github which I made for fun
+                    or to learn a new technology.
+                </Typography>
+                <br/>
+                <Grid container spacing={2} justify={"center"}>
+                    {this.state.projects.map(project => {
+                            return <Grid item xs={12} lg={3}>
+                                {this.projectCard(project)}
+                            </Grid>
+                        }
+                    )}
+                </Grid>
+            </Container>
+            )
+
     }
 }
 
