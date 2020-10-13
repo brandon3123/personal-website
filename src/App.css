@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Overpass:wght@800&display=swap');
+
 .App {
   text-align: center;
 }
@@ -12,20 +14,28 @@
   padding-top: 13%;
 }
 
+.aboutMeText {
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: 2px !important;
+}
+
 .aboutMeHeader {
   padding-bottom: 40px;
   padding-top: 20px;
+  color: #57606f;
+  font-family: 'Overpass', sans-serif !important;
 }
 
 .mugShot {
-  height: 400px;
+  height: 480px;
   width: 300px;
   align-self: center;
+  border: 7px solid #4a69bd;
   border-radius: 50%;
 }
 
 .mugShotName {
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .cardFooter .githubLink {

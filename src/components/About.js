@@ -15,30 +15,33 @@ class About extends React.Component {
     render() {
         return (
             <Container className={'aboutMeContainer'}>
-                <Grid container alignItems={"center"}>
-                    <Grid item lg={4}>
+                <Grid container alignItems={"center"} justify={"center"} alignContent={"center"}>
+                    <Grid item lg={4} sm={5} xs={12}>
                         <img className={'mugShot'} src={headShot}></img>
-                        <Typography variant={"h4"} className={'mugShotName'}>Brandon Nolan</Typography>
                     </Grid>
-                    <Grid item lg={8} alignItems={"center"} alignContent={"center"}>
+                    <Grid item lg={8} xs={12} alignItems={"center"} alignContent={"center"}>
                         <Card variant={"outlined"}>
                             <CardContent>
                                 <Typography variant={'h2'} align={"center"} className={'aboutMeHeader'}>
-                                    About Me
+                                    Brandon Nolan
                                     <Divider variant={"middle"} />
                                 </Typography>
 
-                                <Typography align={"center"}>
+                                <Typography align={"center"} className={'aboutMeText'}>
                                     Hello! Thank you for taking the time to visit my website! My name is Brandon Nolan, I am
                                     a born and raised Calgarian. I have been working as a software developer since 2016 after
-                                    graduating from the Information Technology - Software Development program from
-                                    the Southern Alberta Institute of Technology (SAIT) .
+                                    graduating from the Information Technology - Software Development program at the Southern Alberta Institute of Technology (SAIT).
 
                                     <br/><br/>
 
-                                    I am a passionate individual with strong knowledge of Java and other varied skills.
-                                    I am eager to learn and possess a strong aptitude and interest in software.
-                                    I am a quick learner with strong communication skills to compliment my technical abilities and work well independently or within a team.
+                                    I am a passionate individual with strong knowledge of Java and other varied skills. I am eager to
+                                    learn and possess a strong aptitude and interest in software. I am a quick learner with
+                                    strong communication skills to compliment my technical abilities and work well independently or within a team.
+
+                                    <br/><br/>
+
+                                    Outside of work I like to keep active by cycling, snowboarding, rock climbing or any other
+                                    physical activity. I also enjoy learning new frameworks and anything software related.
                                 </Typography>
                             </CardContent>
                             <CardActions>
