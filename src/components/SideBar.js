@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         position:"fixed",
         height: "100%",
         width: 200,
-        backgroundColor: "#3c6382",
+        backgroundColor: "#0a3d62",
         paddingTop:240,
         borderRight: `2px solid ${theme.palette.divider}`,
     },

@@ -8,6 +8,26 @@
   transition: 0.3s;
 }
 
+.aboutMeContainer {
+  padding-top: 13%;
+}
+
+.aboutMeHeader {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.mugShot {
+  height: 400px;
+  width: 300px;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.mugShotName {
+  padding-left: 30px;
+}
+
 .cardFooter .githubLink {
   color: black;
   background-color: #6cc644;
