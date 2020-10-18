@@ -10,20 +10,52 @@
   transition: 0.3s;
 }
 
+.rtlList {
+  direction: rtl;
+}
+
+.informationFont {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.headerFont {
+  color: #57606f;
+  font-family: 'Overpass', sans-serif !important;
+}
+
 .aboutMeContainer {
-  padding-top: 13%;
+  padding-top: 11%;
+}
+
+
+.experienceContainer {
+  padding-top: 5%;
+}
+
+.experienceDivider {
+  /*width:25%;*/
+}
+
+.experienceGrid {
+  padding-top: 20px;
+}
+
+.experienceHeader {
+  /*padding-bottom: 5px;*/
+}
+
+.progressExperience {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .aboutMeText {
-  font-family: 'Montserrat', sans-serif !important;
   letter-spacing: 2px !important;
 }
 
 .aboutMeHeader {
   padding-bottom: 40px;
   padding-top: 20px;
-  color: #57606f;
-  font-family: 'Overpass', sans-serif !important;
 }
 
 .mugShot {

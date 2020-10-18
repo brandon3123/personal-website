@@ -22,12 +22,12 @@ class About extends React.Component {
                     <Grid item lg={8} xs={12} alignItems={"center"} alignContent={"center"}>
                         <Card variant={"outlined"}>
                             <CardContent>
-                                <Typography variant={'h2'} align={"center"} className={'aboutMeHeader'}>
+                                <Typography variant={'h2'} align={"center"} className={'aboutMeHeader headerFont'}>
                                     Brandon Nolan
                                     <Divider variant={"middle"} />
                                 </Typography>
 
-                                <Typography align={"center"} className={'aboutMeText'}>
+                                <Typography align={"center"} className={'aboutMeText informationFont'}>
                                     Hello! Thank you for taking the time to visit my website! My name is Brandon Nolan, I am
                                     a born and raised Calgarian. I have been working as a software developer since 2016 after
                                     graduating from the Information Technology - Software Development program at the Southern Alberta Institute of Technology (SAIT).
