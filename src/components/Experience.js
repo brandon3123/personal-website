@@ -38,50 +38,50 @@ class Experience extends React.Component{
                             <TimelineContent>
                                     <ul>
                                         <li >
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Full stack developer on the Integration, Dev-Ops & Product development teams. Responsible for end-to-end application and REST API's utilizing
                                                 <i className={'headerFont'}> Java, JSF, Spring, Spring-Security, Spring-Boot, JPA, Maven, Oracle and Postgres.</i>
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Implemented an  <i className={'headerFont'}>SSO</i> platform leveraging  <i className={'headerFont'}>Spring Security/Boot</i>, allowing authentication/authorization
                                                 by means of <i className={'headerFont'}>OAuth2/OIDC, LDAP, Active Directory, SAML 2</i>.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Championed integration projects with external vendors by reviewing technical documentation and meeting with clients.
                                                 Translating their business requirements into projects tailored to specification.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Provided day-to-day production support for client integration interfaces and applications across Canada, UK and USA. Addressing all issues found with efficient solutions or workarounds.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Developed and maintained exceptional <i className={'headerFont'}>REST API's</i>, leveraging  <i className={'headerFont'}>Java, JavaScript, JSON, XML, TCP, HTTP, JAX-RS, Jersey and Rhapsody.</i>
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Created extensive documentation, including <i className={'headerFont'}>API Swagger</i> Docs, interface workflows/specifications and general 'how-to' and training documentation for internal staff.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Trained to new staff, and provided mentorship to existing team members. Sharing knowledge and expertise across the development team.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Effectively practiced <i className={'headerFont'}>Agile</i> development methodologies, participating in daily stand-ups, sprint-kick offs and grooming sessions.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography className={'informationFont'}>
+                                            <Typography className={'informationFont experienceText'}>
                                                 Contributed to innovation through the migration of legacy code to modern frameworks.
                                             </Typography>
                                         </li>
@@ -93,17 +93,17 @@ class Experience extends React.Component{
                                 <br/><br/><br/><br/>
                                 <ul className={'rtlList'}>
                                     <li>
-                                        <Typography className={'informationFont'}>
+                                        <Typography className={'informationFont experienceText'}>
                                             On-going contract position. Providing timely and efficient website maintenance.
                                         </Typography>
                                     </li>
                                     <li>
-                                        <Typography className={'informationFont'}>
+                                        <Typography className={'informationFont experienceText'}>
                                             Implemented a complete website re-design and modernization, utilizing <i className={'headerFont'}>WordPress</i>.
                                         </Typography>
                                     </li>
                                     <li>
-                                        <Typography className={'informationFont'}>
+                                        <Typography className={'informationFont experienceText'}>
                                             Introduced new features for client, including CMS, email contact, calendar events and a photo gallery.
                                         </Typography>
                                     </li>

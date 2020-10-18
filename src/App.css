@@ -40,6 +40,10 @@
   padding-top: 20px;
 }
 
+.experienceText {
+  letter-spacing: 1.6px !important;
+}
+
 .experienceHeader {
   /*padding-bottom: 5px;*/
 }
