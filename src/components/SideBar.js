@@ -10,6 +10,7 @@ import Projects from "./Projects";
 import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -69,7 +70,6 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         color: "#f5f6fa"
     }
-
 }));
 
 export default function VerticalTabs() {
@@ -91,23 +91,23 @@ export default function VerticalTabs() {
             >
                 <CodeIcon className={classes.codeIcon} fontSize={"large"}/>
                 <Tab label="About Me" className={classes.tabLabel} {...a11yProps(2)} />
-                <Tab label="Experience" className={classes.tabLabel} {...a11yProps(1)} />
+                <Tab label="Experience" className={classes.tabLabel} {...a11yProps(4)} />
                 <Tab label="Projects" className={classes.tabLabel} {...a11yProps(3)} />
-                <Tab label="Skills" className={classes.tabLabel} {...a11yProps(4)} />
+                <Tab label="Skills" className={classes.tabLabel} {...a11yProps(1)} />
                 <Tab label="Education" className={classes.tabLabel} {...a11yProps(5)} />
                 <Tab label="Contact Me" className={classes.tabLabel} {...a11yProps(6)} />
             </Tabs>
             <TabPanel value={value}  index={2}>
                 <About />
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={4}>
                 <Experience />
             </TabPanel>
             <TabPanel value={value} index={3}>
-                <Projects/>
+                <Projects />
             </TabPanel>
-            <TabPanel value={value} index={4}>
-                Item Four
+            <TabPanel  value={value} index={1}>
+                <Skills />
             </TabPanel>
             <TabPanel value={value} index={5}>
                 Item Five

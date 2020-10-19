@@ -20,7 +20,7 @@ class Experience extends React.Component{
             <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
                 Experience
             </Typography>
-            <Divider className={'experienceDivider'} />
+            <Divider className={'centerDivider'} />
             <Grid container direction={"column"} className={'experienceGrid'}>
                 <Grid item>
                     <Timeline>

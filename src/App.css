@@ -30,13 +30,14 @@
 
 .experienceContainer {
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .timelineDot {
   background-color: #0a3d62 !important;
 }
 
-.experienceDivider {
+.centerDivider {
   width:50%;
   position: relative;
   left: 25%;
@@ -78,6 +79,11 @@
 
 .mugShotName {
   padding-left: 35px;
+}
+
+.skillsContainer {
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 .cardFooter .githubLink {
