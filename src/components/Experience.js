@@ -19,9 +19,8 @@ class Experience extends React.Component{
         <Container className={'experienceContainer'}>
             <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
                 Experience
-                {/*<Divider className={'experienceDivider'} />*/}
             </Typography>
-
+            <Divider className={'experienceDivider'} />
             <Grid container direction={"column"} className={'experienceGrid'}>
                 <Grid item>
                     <Timeline>
@@ -72,7 +71,7 @@ class Experience extends React.Component{
                                         </li>
                                         <li>
                                             <Typography className={'informationFont experienceText'}>
-                                                Trained to new staff, and provided mentorship to existing team members. Sharing knowledge and expertise across the development team.
+                                                Trained new staff, and provided mentorship to existing team members. Sharing knowledge and expertise across the development team.
                                             </Typography>
                                         </li>
                                         <li>
@@ -94,17 +93,17 @@ class Experience extends React.Component{
                                 <ul className={'rtlList'}>
                                     <li>
                                         <Typography className={'informationFont experienceText'}>
-                                            On-going contract position. Providing timely and efficient website maintenance.
+                                            On-going contract position. Providing timely and efficient website maintenance
                                         </Typography>
                                     </li>
                                     <li>
                                         <Typography className={'informationFont experienceText'}>
-                                            Implemented a complete website re-design and modernization, utilizing <i className={'headerFont'}>WordPress</i>.
+                                            Implemented a complete website re-design and modernization, utilizing <i className={'headerFont'}>WordPress</i>
                                         </Typography>
                                     </li>
                                     <li>
                                         <Typography className={'informationFont experienceText'}>
-                                            Introduced new features for client, including CMS, email contact, calendar events and a photo gallery.
+                                            Introduced new features for client, including CMS, email contact, calendar events and a photo gallery
                                         </Typography>
                                     </li>
                                 </ul>

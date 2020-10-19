@@ -37,7 +37,9 @@
 }
 
 .experienceDivider {
-  /*width:25%;*/
+  width:50%;
+  position: relative;
+  left: 25%;
 }
 
 .experienceGrid {
@@ -49,7 +51,7 @@
 }
 
 .experienceHeader {
-  /*padding-bottom: 5px;*/
+  padding-bottom: 5px;
 }
 
 .progressExperience {
