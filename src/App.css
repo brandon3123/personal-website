@@ -32,6 +32,10 @@
   padding-top: 5%;
 }
 
+.timelineDot {
+  background-color: #0a3d62 !important;
+}
+
 .experienceDivider {
   /*width:25%;*/
 }

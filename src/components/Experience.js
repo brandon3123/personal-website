@@ -32,7 +32,7 @@ class Experience extends React.Component{
                                 <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>July 2016 - Present</Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot />
+                                <TimelineDot className={'timelineDot'} />
                                 <TimelineConnector style={{marginBottom:-70}}/>
                             </TimelineSeparator>
                             <TimelineContent>
@@ -110,7 +110,7 @@ class Experience extends React.Component{
                                 </ul>
                             </TimelineOppositeContent>
                             <TimelineSeparator style={{paddingTop:70}}>
-                                <TimelineDot/>
+                                <TimelineDot className={'timelineDot'}/>
                                 <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>
