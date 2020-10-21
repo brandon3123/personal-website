@@ -16,6 +16,16 @@ import css from "../images/css-3.png"
 import javaScript from "../images/java-script.png"
 import reactIcon from "../images/react.png"
 import oracle from "../images/oracle.png"
+import python from "../images/python.png"
+import oauth2 from "../images/oauth2.png"
+import oidc from "../images/oidc.png"
+import ldap from "../images/ldap.png"
+import saml from "../images/saml.png"
+import tomcat from "../images/tomcat.png"
+import git from "../images/git.png"
+import spock from "../images/spock.png"
+import bash from "../images/bash.png"
+import xml from "../images/xml.png"
 
 class Skills extends React.Component {
     render() {
@@ -43,6 +53,22 @@ class Skills extends React.Component {
                             <Avatar src={spring} className={'skillsIcon'} variant={"square"}></Avatar>
                             <Typography variant={"h6"} className={'informationFont'}>Spring</Typography>
                         </Grid>
+                        <Grid item className={'skillGridItem'} style={{paddingRight: 5}}>
+                            <Avatar src={oidc} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>OpenID</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={oauth2} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>OAuth2</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={saml} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>SAML2</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={git} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Git</Typography>
+                        </Grid>
                         <Grid item className={'skillGridItem'}>
                             <Avatar src={sql} className={'skillsIcon'} variant={"square"}></Avatar>
                             <Typography variant={"h6"} className={'informationFont'}>SQL</Typography>
@@ -50,6 +76,18 @@ class Skills extends React.Component {
                         <Grid item className={'skillGridItem'}>
                             <Avatar src={json} className={'skillsIcon'} variant={"square"}></Avatar>
                             <Typography variant={"h6"} className={'informationFont'}>JSON</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={xml} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>XML</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={ldap} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>LDAP</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={tomcat} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Tomcat</Typography>
                         </Grid>
                         <Grid item className={'skillGridItem'}>
                             <Avatar src={html} className={'skillsIcon'} variant={"square"}></Avatar>
@@ -66,6 +104,18 @@ class Skills extends React.Component {
                         <Grid item className={'skillGridItem'}>
                             <Avatar src={reactIcon} className={'skillsIcon'} variant={"square"}></Avatar>
                             <Typography variant={"h6"} className={'informationFont'}>React</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={python} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Python</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={spock} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Spock</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={bash} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Bash</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
