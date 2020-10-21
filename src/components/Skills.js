@@ -11,6 +11,11 @@ import spring from "../images/spring.png"
 import springSecurity from "../images/springSecurity.png"
 import sql from "../images/sql.png"
 import html from "../images/html-5.png"
+import json from "../images/json.png"
+import css from "../images/css-3.png"
+import javaScript from "../images/java-script.png"
+import reactIcon from "../images/react.png"
+import oracle from "../images/oracle.png"
 
 class Skills extends React.Component {
     render() {
@@ -43,20 +48,39 @@ class Skills extends React.Component {
                             <Typography variant={"h6"} className={'informationFont'}>SQL</Typography>
                         </Grid>
                         <Grid item className={'skillGridItem'}>
+                            <Avatar src={json} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>JSON</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
                             <Avatar src={html} className={'skillsIcon'} variant={"square"}></Avatar>
                             <Typography variant={"h6"} className={'informationFont'}>HTML</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={css} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>CSS</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={javaScript} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>JavaScript</Typography>
+                        </Grid>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={reactIcon} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>React</Typography>
                         </Grid>
                     </Grid>
                 </Grid>
 
                 <Grid item>
-                    <Card>
-                        <CardContent>
-                            <Typography variant={"h5"} className={'headerFont'}>
-                                Databases
-                            </Typography>
-                        </CardContent>
-                    </Card>
+                    <Typography variant={"h5"} className={'headerFont'}>
+                        Databases
+                    </Typography>
+                    <br/>
+                    <Grid container>
+                        <Grid item className={'skillGridItem'}>
+                            <Avatar src={oracle} className={'skillsIcon'} variant={"square"}></Avatar>
+                            <Typography variant={"h6"} className={'informationFont'}>Oracle</Typography>
+                        </Grid>
+                    </Grid>
                 </Grid>
 
                 <Grid item>
