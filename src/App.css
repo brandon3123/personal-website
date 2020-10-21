@@ -81,6 +81,21 @@
   padding-left: 35px;
 }
 
+.skillsGrid {
+  padding-top: 25px;
+}
+
+.skillGridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsIcon {
+  width: 80px !important;
+  height: 80px !important;
+}
+
 .skillsContainer {
   padding-top: 7%;
   padding-bottom: 7%;
