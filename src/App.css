@@ -60,6 +60,19 @@
   padding-bottom: 100px;
 }
 
+.educationContainer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.educationHeader {
+  padding-bottom: 5px;
+}
+
+.educationGrid {
+  padding-top: 20px;
+}
+
 .aboutMeText {
   letter-spacing: 2px !important;
 }

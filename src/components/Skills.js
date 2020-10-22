@@ -43,6 +43,11 @@ import jira from "../images/jira.png"
 import bitbucket from "../images/bitbucket.png"
 import eclipse from "../images/eclipse.png"
 import netbeans from "../images/netbeans.png"
+import node from "../images/node.png"
+import primeFaces from "../images/primeFaces.png"
+import plsql from "../images/plsql.png"
+import jaxrs from "../images/jaxrs.png"
+import bamboo from "../images/bamboo.png"
 
 class Skills extends React.Component {
     render() {
@@ -71,7 +76,15 @@ class Skills extends React.Component {
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={springSecurity} className={'skillsIcon'} variant={"square"}></Avatar>
                                     <Typography variant={"h6"}
-                                                className={'informationFont'}>Spring <br/>Security</Typography>
+                                                className={'informationFont'}>Spring<br/>Security</Typography>
+                                </Grid>
+                                <Grid item className={'skillGridItem'}>
+                                    <Avatar src={primeFaces} className={'skillsIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>Prime<br/>Faces</Typography>
+                                </Grid>
+                                <Grid item className={'skillGridItem'}>
+                                    <Avatar src={jaxrs} className={'skillsIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>JAX-RS</Typography>
                                 </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={spock} className={'skillsIcon'} variant={"square"}></Avatar>
@@ -96,6 +109,10 @@ class Skills extends React.Component {
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={sql} className={'skillsIcon'} variant={"square"}></Avatar>
                                     <Typography variant={"h6"} className={'informationFont'}>SQL</Typography>
+                                </Grid>
+                                <Grid item className={'skillGridItem'}>
+                                    <Avatar src={plsql} className={'skillsIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>PL/SQL</Typography>
                                 </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={json} className={'skillsIcon'} variant={"square"}></Avatar>
@@ -128,6 +145,10 @@ class Skills extends React.Component {
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={reactIcon} className={'skillsIcon'} variant={"square"}></Avatar>
                                     <Typography variant={"h6"} className={'informationFont'}>React</Typography>
+                                </Grid>
+                                <Grid item className={'skillGridItem'}>
+                                    <Avatar src={node} className={'skillsIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>Node JS</Typography>
                                 </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={python} className={'skillsIcon'} variant={"square"}></Avatar>
@@ -211,6 +232,10 @@ class Skills extends React.Component {
                                 <Grid item className={'skillGridItem skillsIconPaddingRight'}>
                                     <Avatar src={confluence} className={'skillsIcon'} variant={"square"}></Avatar>
                                     <Typography variant={"h6"} className={'informationFont'}>Confluence</Typography>
+                                </Grid>
+                                <Grid item className={'skillGridItem skillsIconPaddingRight'}>
+                                    <Avatar src={bamboo} className={'skillsIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>Bamboo</Typography>
                                 </Grid>
                             </Grid>
                         </CardContent>
