@@ -65,12 +65,54 @@
   transition: 0.3s;
 }
 
+.contactGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.contactEmailInput {
+  width: 500px;
+}
+
+.contactButtonGrid {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.contactButtonGrid .contactButton {
+  width: 500px;
+  color: white;
+  font-size: 18px;
+  background-color: #0a3d62;
+}
+
+.contactGrid .contactEmailAddressControl {
+  display: block;
+}
+
+.contactGrid .contactMessageBoxControl {
+  padding-top: 40px;
+}
+
+.contactButtonGrid .contactButton:hover {
+  color: #0a3d62;
+  background-color: transparent;
+  border: 3px solid #0a3d62;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contactMessageBox {
+  display: flex;
+  width: 500px;
+}
+
 .projectsTable .githubLink {
   color: white;
   background-color: #0a3d62;
   height: 40px;
   width: 40px;
-  /*border-radius: 100px;*/
 }
 
 .projectsTableHeader {
