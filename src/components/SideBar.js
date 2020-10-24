@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import About from "./About";
-import Projects from "./Projects";
 import CodeIcon from '@material-ui/icons/Code';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Education from "./Education";
@@ -16,7 +13,7 @@ import ProjectTable from "./ProjectTable";
 import ContactMe from "./ContactMe";
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const {children, value, index, ...other} = props;
 
     return (
         <div
@@ -56,20 +53,20 @@ const useStyles = makeStyles((theme) => ({
     tabs: {
         // left:0,
         // top:0,
-        position:"fixed",
+        position: "fixed",
         height: "100%",
         width: 200,
         backgroundColor: "#0a3d62",
-        paddingTop:240,
+        paddingTop: 240,
         borderRight: `2px solid ${theme.palette.divider}`,
     },
     tabLabel: {
         padding: 10,
-        opacity:1,
+        opacity: 1,
         color: "#f5f6fa"
     },
     codeIcon: {
-        padding:10,
+        padding: 10,
         alignSelf: "center",
         color: "#f5f6fa"
     }
@@ -100,23 +97,23 @@ export default function VerticalTabs() {
                 <Tab label="Education" className={classes.tabLabel} {...a11yProps(5)} />
                 <Tab label="Contact Me" className={classes.tabLabel} {...a11yProps(1)} />
             </Tabs>
-            <TabPanel value={value}  index={6}>
-                <About />
+            <TabPanel value={value} index={6}>
+                <About/>
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <Experience />
+                <Experience/>
             </TabPanel>
             <TabPanel value={value} index={3}>
-                <ProjectTable />
+                <ProjectTable/>
             </TabPanel>
-            <TabPanel  value={value} index={4}>
-                <Skills />
+            <TabPanel value={value} index={4}>
+                <Skills/>
             </TabPanel>
             <TabPanel value={value} index={5}>
-                <Education />
+                <Education/>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <ContactMe />
+                <ContactMe/>
             </TabPanel>
         </div>
     );

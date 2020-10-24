@@ -80,7 +80,8 @@ class Skills extends React.Component {
                                 </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={primeFaces} className={'skillsIcon'} variant={"square"}></Avatar>
-                                    <Typography variant={"h6"} className={'informationFont'}>Prime<br/>Faces</Typography>
+                                    <Typography variant={"h6"}
+                                                className={'informationFont'}>Prime<br/>Faces</Typography>
                                 </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={jaxrs} className={'skillsIcon'} variant={"square"}></Avatar>
