@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import headShot from '../mugShot.png';
+import headShot from '../images/mugShot.png';
 import Box from "@material-ui/core/Box";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";

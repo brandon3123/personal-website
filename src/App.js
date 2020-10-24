@@ -11,16 +11,6 @@ function App() {
   return (
       <div>
           <SideBar />
-        {/*  <Grid spacing={1} container justify={"center"}>*/}
-        {/*      <Grid item lg={6}>*/}
-        {/*          <About />*/}
-        {/*      </Grid>*/}
-        {/*      <Grid item lg={6}>*/}
-        {/*          <Skills />*/}
-        {/*      </Grid>*/}
-        {/*  </Grid>*/}
-        {/*  <Experience />*/}
-        {/*<Projects />*/}
       </div>
   );
 }
