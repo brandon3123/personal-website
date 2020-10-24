@@ -51,7 +51,7 @@ import bamboo from "../images/bamboo.png"
 
 class Skills extends React.Component {
     render() {
-        return <Container className={'skillsContainer'}>
+        return <Container className={'pageContainer'}>
             <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
                 Skills
             </Typography>

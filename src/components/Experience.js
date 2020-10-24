@@ -16,7 +16,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 class Experience extends React.Component{
 
     render() { return (
-        <Container className={'experienceContainer'}>
+        <Container className={'pageContainer'}>
             <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
                 Experience
             </Typography>

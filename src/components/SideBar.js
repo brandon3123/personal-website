@@ -92,22 +92,21 @@ export default function VerticalTabs() {
                 className={classes.tabs}
             >
                 <CodeIcon className={classes.codeIcon} fontSize={"large"}/>
-                <Tab label="About Me" className={classes.tabLabel} {...a11yProps(3)} />
+                <Tab label="About Me" className={classes.tabLabel} {...a11yProps(1)} />
                 <Tab label="Experience" className={classes.tabLabel} {...a11yProps(2)} />
-                <Tab label="Projects" className={classes.tabLabel} {...a11yProps(1)} />
+                <Tab label="Projects" className={classes.tabLabel} {...a11yProps(3)} />
                 <Tab label="Skills" className={classes.tabLabel} {...a11yProps(4)}/>
                 <Tab label="Education" className={classes.tabLabel} {...a11yProps(5)} />
                 <Tab label="Contact Me" className={classes.tabLabel} {...a11yProps(6)} />
             </Tabs>
-            <TabPanel value={value}  index={3}>
+            <TabPanel value={value}  index={1}>
                 <About />
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <Experience />
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={3}>
                 <ProjectTable />
-                {/*<Projects />*/}
             </TabPanel>
             <TabPanel  value={value} index={4}>
                 <Skills />

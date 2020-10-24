@@ -14,7 +14,7 @@ class Education extends React.Component {
 
     render() {
         return (
-            <Container className={'educationContainer'}>
+            <Container className={'pageContainer'}>
                 <Typography variant={"h2"} className={'educationHeader headerFont'} align={"center"}>
                     Education
                 </Typography>
