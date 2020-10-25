@@ -78,7 +78,12 @@
   display: flex;
   align-self: flex-end;
   justify-content: center;
+  padding-top: 20px;
 }
+
+/*.contactForm {*/
+/*  display: flex;*/
+/*}*/
 
 .contactButtonGrid .contactButton {
   width: 500px;
@@ -88,11 +93,12 @@
 }
 
 .contactGrid .contactEmailAddressControl {
-  display: block;
+  /*display: block;*/
+  padding-bottom: 40px;
 }
 
 .contactGrid .contactMessageBoxControl {
-  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contactButtonGrid .contactButton:hover {

@@ -53,7 +53,6 @@ class ProjectTable extends React.Component {
             </Container>
         )
     }
-
 }
 
 ProjectTable.defaultProps = {
