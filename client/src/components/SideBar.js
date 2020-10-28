@@ -9,7 +9,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Education from "./Education";
-import ProjectTable from "./ProjectTable";
+import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 
 function TabPanel(props) {
@@ -104,7 +104,7 @@ export default function VerticalTabs() {
                 <Experience/>
             </TabPanel>
             <TabPanel value={value} index={3}>
-                <ProjectTable/>
+                <Projects/>
             </TabPanel>
             <TabPanel value={value} index={4}>
                 <Skills/>
