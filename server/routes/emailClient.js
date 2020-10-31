@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mailer = require('nodemailer');
-var clientInfo = require('./emailClientInfo.json');
+const clientInfo = require('./emailClientInfo.json');
 
 const gmail = mailer.createTransport({
     service: 'gmail',
@@ -20,15 +20,22 @@ router.post('/', (req, res) => {
             subject: 'Personal Site Email From (' + email + ')',
             text: message
         },
-        (err, result) => {
+        (err) => {
             if (err) {
-                res.status(400).send(err)
+                res
+                    .status(400)
+                    .send(err)
             } else {
-                res.send(result.response)
+                res
+                    .status(200)
+                    .json(
+                        {
+                            message: "Email sent successfully!"
+                        }
+                    )
             }
         }
     )
-    res.json(req.body)
 });
 
 module.exports = router;
