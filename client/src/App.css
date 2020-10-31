@@ -17,6 +17,13 @@
   font-family: 'Overpass', sans-serif !important;
 }
 
+.MuiTypography-body1 {
+  color: white;
+  font-family: 'Overpass', sans-serif !important;
+  /*font-family: 'Montserrat', sans-serif !important;*/
+  letter-spacing: 4px !important;
+}
+
 .aboutMeContainer {
   padding-top: 11%;
 }

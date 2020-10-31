@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import SideBar from "../../client/src/components/SideBar";
+import Navigation from "./components/Navigation";
 
 function App() {
-  return (
+    return (
       <div>
-          <SideBar />
+          <Navigation />
+          {/*<SideBar />*/}
       </div>
   );
 }
