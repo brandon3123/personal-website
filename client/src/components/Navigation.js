@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import CodeIcon from '@material-ui/icons/Code';
 import SchoolIcon from '@material-ui/icons/School';
 import List from "@material-ui/core/List";
@@ -14,14 +14,13 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import MailIcon from "@material-ui/icons/Mail";
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import WorkIcon from '@material-ui/icons/Work';
 import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { Switch, Route, Link, BrowserRouter } from "react-router-dom";
+import {makeStyles, useTheme} from "@material-ui/core/styles";
+import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
@@ -29,43 +28,53 @@ import Skills from "./Skills";
 import Education from "./Education";
 import ContactMe from "./ContactMe";
 
-const drawerWidth = 240;
+const drawerWidth = 195;
 
 const useStyles = makeStyles(theme => ({
     root: {
         display: "flex"
     },
     drawer: {
-        [theme.breakpoints.up("sm")]: {
+        [theme.breakpoints.up("lg")]: {
             width: drawerWidth,
             flexShrink: 0
         }
     },
     appBar: {
+        backgroundColor: "#0a3d62",
+        border: "none",
         marginLeft: drawerWidth,
-        [theme.breakpoints.up("sm")]: {
+        [theme.breakpoints.up("lg")]: {
             width: `calc(100% - ${drawerWidth}px)`
         }
     },
     menuButton: {
         marginRight: theme.spacing(2),
-        [theme.breakpoints.up("sm")]: {
+        [theme.breakpoints.up("lg")]: {
             display: "none"
         }
     },
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
+        display: "flex",
+        flexDirection: "row",
+        border: "none",
         width: drawerWidth,
-        backgroundColor: "#0a3d62"
+        backgroundColor: "#0a3d62",
+        alignItems: "center"
     },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3)
+    },
+    socialLinks: {
+        marginLeft: "auto",
+        marginRight: -12
     }
 }));
 
 function ResponsiveDrawer(props) {
-    const { container } = props;
+    const {container} = props;
     const classes = useStyles();
     const theme = useTheme();
     const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -76,44 +85,43 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div>
-            <div className={classes.toolbar} />
-            <Divider />
+            <div className={classes.toolbar}/>
             <List>
-                <ListItem key={'About Me'} component={Link} to={"/About Me"}>
+                <ListItem key={'About'} component={Link} to={"/About"}>
                     <ListItemIcon>
-                        <AccountCircle style={{color: "white"}} />
+                        <AccountCircle style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'About Me'} />
+                    <ListItemText primary={'About'} className={'navLink'}/>
                 </ListItem>
                 <ListItem key={'Experience'} component={Link} to={"/Experience"}>
                     <ListItemIcon>
-                        <WorkIcon style={{color: "white"}} />
+                        <WorkIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Experience'} />
+                    <ListItemText primary={'Experience'} className={'navLink'}/>
                 </ListItem>
                 <ListItem key={'Projects'} component={Link} to={"/Projects"}>
                     <ListItemIcon>
-                        <CodeIcon style={{color: "white"}} />
+                        <GitHubIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Projects'} />
+                    <ListItemText primary={'Projects'} className={'navLink'}/>
                 </ListItem>
                 <ListItem key={'Skills'} component={Link} to={"/Skills"}>
                     <ListItemIcon>
-                        <AccountCircle style={{color: "white"}} />
+                        <CodeIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Skills'} />
+                    <ListItemText primary={'Skills'} className={'navLink'}/>
                 </ListItem>
                 <ListItem key={'Education'} component={Link} to={"/Education"}>
                     <ListItemIcon>
-                        <SchoolIcon style={{color: "white"}} />
+                        <SchoolIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Education'} />
+                    <ListItemText primary={'Education'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Contact Me'} component={Link} to={"/Contact Me"}>
+                <ListItem key={'Contact'} component={Link} to={"/Contact"}>
                     <ListItemIcon>
-                        <MailIcon style={{color: "white"}} />
+                        <MailIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Contact Me'} />
+                    <ListItemText primary={'Contact'} className={'navLink'}/>
                 </ListItem>
             </List>
         </div>
@@ -121,7 +129,7 @@ function ResponsiveDrawer(props) {
 
     return (
         <div className={classes.root}>
-            <CssBaseline />
+            <CssBaseline/>
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar>
                     <IconButton
@@ -131,17 +139,36 @@ function ResponsiveDrawer(props) {
                         onClick={handleDrawerToggle}
                         className={classes.menuButton}
                     >
-                        <MenuIcon />
+                        <MenuIcon/>
                     </IconButton>
-                    <Typography variant="h6" noWrap>
+                    <Typography variant="h5" noWrap className={'nameFont'}>
                         Brandon Nolan
                     </Typography>
+                    <div className={classes.socialLinks}>
+                        <IconButton
+                            color="inherit"
+                            aria-label="open drawer"
+                            href={'https://github.com/brandon3123'}
+                            target={'_blank'}
+                        >
+                            <GitHubIcon fontSize={"large"}/>
+                        </IconButton>
+                        <IconButton
+                            color="inherit"
+                            aria-label="open drawer"
+                            href={'https://linkedin.com/in/brandon-n-0128a144'}
+                            target={'_blank'}
+                            style={{float: "right"}}
+                        >
+                            <LinkedInIcon fontSize={"large"}/>
+                        </IconButton>
+                    </div>
                 </Toolbar>
             </AppBar>
             <BrowserRouter>
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                    <Hidden smUp implementation="css">
+                    <Hidden mdUp implementation="css">
                         <Drawer
                             container={container}
                             variant="temporary"
@@ -158,7 +185,7 @@ function ResponsiveDrawer(props) {
                             {drawer}
                         </Drawer>
                     </Hidden>
-                    <Hidden xsDown implementation="css">
+                    <Hidden mdDown implementation="css">
                         <Drawer
                             classes={{
                                 paper: classes.drawerPaper
@@ -172,16 +199,15 @@ function ResponsiveDrawer(props) {
                 </nav>
 
                 <main className={classes.content}>
-                    <div className={classes.toolbar} />
-
+                    <div className={classes.toolbar}/>
                     <Switch>
-                        <Route exact path="/" render={() => <About />} />
-                        <Route exact path="/About Me" render={() => <About />} />
-                        <Route path="/Experience" render={() => <Experience />} />
-                        <Route path="/Projects" render={() => <Projects />} />
-                        <Route path="/Skills" render={() => <Skills />} />
-                        <Route path="/Education" render={() => <Education />} />
-                        <Route path="/Contact Me" render={() => <ContactMe />} />
+                        <Route exact path="/" render={() => <About/>}/>
+                        <Route exact path="/About" render={() => <About/>}/>
+                        <Route path="/Experience" render={() => <Experience/>}/>
+                        <Route path="/Projects" render={() => <Projects/>}/>
+                        <Route path="/Skills" render={() => <Skills/>}/>
+                        <Route path="/Education" render={() => <Education/>}/>
+                        <Route path="/Contact" render={() => <ContactMe/>}/>
                     </Switch>
                 </main>
             </BrowserRouter>

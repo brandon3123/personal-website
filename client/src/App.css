@@ -1,91 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Overpass:wght@800&display=swap');
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .rtlList {
-  direction: rtl;
+    direction: rtl;
 }
 
 .informationFont {
-  font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .headerFont {
-  color: #57606f;
-  font-family: 'Overpass', sans-serif !important;
+    color: #57606f;
+    font-family: 'Overpass', sans-serif !important;
 }
 
-.MuiTypography-body1 {
-  color: white;
-  font-family: 'Overpass', sans-serif !important;
-  /*font-family: 'Montserrat', sans-serif !important;*/
-  letter-spacing: 4px !important;
+.nameFont {
+    color: white;
+    font-family: 'Overpass', sans-serif !important;
+    letter-spacing: 4px !important;
+}
+
+.navLink span {
+    color: white !important;
+    font-family: 'Overpass', sans-serif !important;
+    letter-spacing: 2px !important;
+    line-height: 2em;
 }
 
 .aboutMeContainer {
-  padding-top: 11%;
+    padding-top: 11%;
 }
 
-
 .pageContainer {
-  padding-top: 5%;
-  padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .timelineDot {
-  background-color: #0a3d62 !important;
+    background-color: #0a3d62 !important;
 }
 
 .centerDivider {
-  width:50%;
-  position: relative;
-  left: 25%;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 .experienceGrid {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .experienceText {
-  letter-spacing: 1.6px !important;
+    letter-spacing: 1.6px !important;
 }
 
 .experienceHeader {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .progressExperience {
-  padding-top: 100px;
-  padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .projectsTable {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .projectsTable .githubLink:hover {
-  color: #0a3d62;
-  background-color: transparent;
-  border: 3px solid #0a3d62;
-  transition: 0.3s;
+    color: #0a3d62;
+    background-color: transparent;
+    border: 3px solid #0a3d62;
+    transition: 0.3s;
 }
 
 .contactGrid {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contactEmailInput {
-  width: 500px;
+    width: 500px;
 }
 
 .contactButtonGrid {
-  display: flex;
-  align-self: flex-end;
-  justify-content: center;
-  padding-top: 20px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 /*.contactForm {*/
@@ -93,151 +98,151 @@
 /*}*/
 
 .contactButtonGrid .contactButton {
-  width: 500px;
-  color: white;
-  font-size: 18px;
-  background-color: #0a3d62;
+    width: 500px;
+    color: white;
+    font-size: 18px;
+    background-color: #0a3d62;
 }
 
 .contactGrid .contactEmailAddressControl {
-  /*display: block;*/
-  padding-bottom: 40px;
+    /*display: block;*/
+    padding-bottom: 40px;
 }
 
 .contactGrid .contactMessageBoxControl {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .contactButtonGrid .contactButton:hover {
-  color: #0a3d62;
-  background-color: transparent;
-  border: 3px solid #0a3d62;
-  font-size: 18px;
-  transition: 0.3s;
+    color: #0a3d62;
+    background-color: transparent;
+    border: 3px solid #0a3d62;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .contactMessageBox {
-  display: flex;
-  width: 500px;
+    display: flex;
+    width: 500px;
 }
 
 .projectsTable .githubLink {
-  color: white;
-  background-color: #0a3d62;
-  height: 40px;
-  width: 40px;
+    color: white;
+    background-color: #0a3d62;
+    height: 40px;
+    width: 40px;
 }
 
 .projectsTableHeader {
-  color: #0a3d62;
-  font-family: 'Overpass', sans-serif;
-  background-color: #d4d8dd;
-  font-size: 17px;
+    color: #0a3d62;
+    font-family: 'Overpass', sans-serif;
+    background-color: #d4d8dd;
+    font-size: 17px;
 
 }
 
 #vertical-tabpanel-1 > div > div > div:nth-child(n) > div > div.MuiDataGrid-mainGridContainer > div.MuiDataGrid-columnsContainer > div > div:nth-child(n) > div.MuiDataGrid-columnSeparator > svg {
-  color: #0a3d62 !important;
+    color: #0a3d62 !important;
 }
 
 #vertical-tabpanel-1 > div > div > div:nth-child(n) > div > div.MuiDataGrid-mainGridContainer > div.MuiDataGrid-columnsContainer > div > div:nth-child(5) > div.MuiDataGrid-columnSeparator > svg {
-  color: inherit !important;
+    color: inherit !important;
 }
 
 .educationContainer {
-  padding-top: 5%;
-  padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .educationHeader {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .educationGrid {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .aboutMeText {
-  letter-spacing: 2px !important;
+    letter-spacing: 2px !important;
 }
 
 .aboutMeHeader {
-  padding-bottom: 40px;
-  padding-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .mugShot {
-  height: 480px;
-  width: 300px;
-  align-self: center;
-  border: 7px solid #0a3d62;
-  border-radius: 50%;
+    height: 480px;
+    width: 300px;
+    align-self: center;
+    border: 7px solid #0a3d62;
+    border-radius: 50%;
 }
 
 .mugShotName {
-  padding-left: 35px;
+    padding-left: 35px;
 }
 
 .skillsGrid {
-  padding-top: 25px;
+    padding-top: 25px;
 }
 
 .skillGridItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skillsIcon {
-  width: 80px !important;
-  height: 80px !important;
+    width: 80px !important;
+    height: 80px !important;
 }
 
 .skillsIconPaddingRight {
-  padding-right: 5px;
+    padding-right: 5px;
 }
 
 .skillsContainer {
-  padding-top: 5%;
-  padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .cardFooter {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
