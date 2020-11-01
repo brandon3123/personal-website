@@ -23,6 +23,10 @@
     letter-spacing: 4px !important;
 }
 
+.navLink:hover {
+    opacity: 0.5;
+}
+
 .navLink span {
     color: white !important;
     font-family: 'Overpass', sans-serif !important;
@@ -30,13 +34,16 @@
     line-height: 2em;
 }
 
+.socialLinkIcon:hover {
+    opacity: 0.5;
+}
+
 .aboutMeContainer {
-    padding-top: 11%;
+    padding-top: 6%;
 }
 
 .pageContainer {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 0.5%;
 }
 
 .timelineDot {

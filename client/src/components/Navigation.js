@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
         alignItems: "center"
     },
     content: {
-        flexGrow: 1,
+        flex: 1,
         padding: theme.spacing(3)
     },
     socialLinks: {
@@ -151,16 +151,15 @@ function ResponsiveDrawer(props) {
                             href={'https://github.com/brandon3123'}
                             target={'_blank'}
                         >
-                            <GitHubIcon fontSize={"large"}/>
+                            <GitHubIcon fontSize={"large"} className={'socialLinkIcon'}/>
                         </IconButton>
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
                             href={'https://linkedin.com/in/brandon-n-0128a144'}
                             target={'_blank'}
-                            style={{float: "right"}}
                         >
-                            <LinkedInIcon fontSize={"large"}/>
+                            <LinkedInIcon fontSize={"large"} className={'socialLinkIcon'}/>
                         </IconButton>
                     </div>
                 </Toolbar>
