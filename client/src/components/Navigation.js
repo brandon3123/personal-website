@@ -61,15 +61,26 @@ const useStyles = makeStyles(theme => ({
         border: "none",
         width: drawerWidth,
         backgroundColor: "#0a3d62",
-        alignItems: "center"
+        alignItems: "center",
+        paddingBottom: 80
     },
     content: {
         flex: 1,
         padding: theme.spacing(3)
     },
     socialLinks: {
+        display: "flex",
         marginLeft: "auto",
         marginRight: -12
+    },
+    socialLinkIcon: {
+        [theme.breakpoints.down("md")]: {
+            fontSize: "smaller"
+        },
+        fontSize: "larger",
+        "&:hover": {
+            opacity: 0.5
+        },
     }
 }));
 
@@ -151,7 +162,7 @@ function ResponsiveDrawer(props) {
                             href={'https://github.com/brandon3123'}
                             target={'_blank'}
                         >
-                            <GitHubIcon fontSize={"large"} className={'socialLinkIcon'}/>
+                            <GitHubIcon className={classes.socialLinkIcon}/>
                         </IconButton>
                         <IconButton
                             color="inherit"
@@ -159,7 +170,7 @@ function ResponsiveDrawer(props) {
                             href={'https://linkedin.com/in/brandon-n-0128a144'}
                             target={'_blank'}
                         >
-                            <LinkedInIcon fontSize={"large"} className={'socialLinkIcon'}/>
+                            <LinkedInIcon className={classes.socialLinkIcon}/>
                         </IconButton>
                     </div>
                 </Toolbar>

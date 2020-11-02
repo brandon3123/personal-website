@@ -34,10 +34,6 @@
     line-height: 2em;
 }
 
-.socialLinkIcon:hover {
-    opacity: 0.5;
-}
-
 .aboutMeContainer {
     padding-top: 6%;
 }
@@ -167,6 +163,10 @@
 
 .educationGrid {
     padding-top: 20px;
+}
+
+.educationTimeLineContent {
+    padding-bottom: 70px !important;
 }
 
 .aboutMeText {

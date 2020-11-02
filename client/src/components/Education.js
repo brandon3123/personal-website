@@ -9,10 +9,21 @@ import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
 import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
+import { withStyles } from '@material-ui/core/styles';
+import {useMediaQuery, useTheme} from "@material-ui/core";
+import ResponsiveInstituteName from "./ResponsiveInstituteName";
 
-class Education extends React.Component {
+const useStyles = theme => ({
+    timeLineInstitute: {
+        color:"red"
+    },
+});
 
-    render() {
+
+
+function Education() {
+     const classes = useStyles();
+
         return (
             <Container className={'pageContainer'}>
                 <Typography variant={"h2"} className={'educationHeader headerFont'} align={"center"}>
@@ -28,7 +39,7 @@ class Education extends React.Component {
                                     <TimelineConnector/>
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <Typography variant={"h4"} className={'headerFont'}>Oracle</Typography>
+                                    <ResponsiveInstituteName value={'Oracle'} />
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>OCA,
                                         Java SE 8 Programmer Certificate</Typography>
                                     <Typography variant={"h6"} className={'headerFont'}
@@ -41,8 +52,7 @@ class Education extends React.Component {
                                     <TimelineConnector/>
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <Typography variant={"h4"} className={'headerFont'}>Sourthern Alberta Institute of
-                                        Technology (SAIT) </Typography>
+                                    <ResponsiveInstituteName value={'Sourthern Alberta Institute of Technology (SAIT)'} />
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>IT -
                                         Software Development Diploma</Typography>
                                     <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2014 -
@@ -55,8 +65,8 @@ class Education extends React.Component {
                                     <TimelineConnector/>
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <Typography variant={"h4"} className={'headerFont'}>John G. Diefenbaker High
-                                        School </Typography>
+                                    <ResponsiveInstituteName value={'Sourthern Alberta Institute of Technology (SAIT)'} />
+                                    <Typography variant={"h4"} className={'headerFont'}>John G. Diefenbaker High School </Typography>
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>High
                                         School Diploma</Typography>
                                     <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2006 -
@@ -68,7 +78,6 @@ class Education extends React.Component {
                 </Grid>
             </Container>
         )
-    }
 }
 
-export default Education;
+export default withStyles(useStyles)(Education);

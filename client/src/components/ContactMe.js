@@ -7,12 +7,17 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import Alert from "@material-ui/lab/Alert";
 
 class ContactMe extends React.Component {
 
     state = {
         emailAddress: null,
-        emailMessage: null
+        emailMessage: null,
+        showAlert: false,
+        alertType: "",
+        alertMessage: ""
     }
 
     handleEmailChange = (e) => {
@@ -32,15 +37,34 @@ class ContactMe extends React.Component {
                     "emailMessage": this.state.emailMessage,
                 }
             )
-            .then(res => console.log('success!'))
-            .catch(err => console.log('error!'))
+            .then(res => this.showAlert("success", "Thank your for the message!"))
+            .catch(err => this.showAlert("error", "Your message could not be sent!"))
         e.preventDefault();
+    }
+
+    showAlert(type, message) {
+        this.setState({
+            showAlert: true,
+            alertType: type,
+            alertMessage: message}
+        )
+    }
+
+    hideAlert = () => {
+        this.setState({showAlert: false})
     }
 
     render() {
         return (
-
             <Container className={'pageContainer'}>
+                <Snackbar anchorOrigin={{vertical: "top", horizontal: "center"}}
+                          open={this.state.showAlert}
+                          autoHideDuration={5000}
+                          onClose={this.hideAlert}>
+                    <Alert severity={this.state.alertType} variant={"standard"} className={'alertBar'}>
+                        {this.state.alertMessage}
+                    </Alert>
+                </Snackbar>
                 <Grid container spacing={3} justify={"center"}>
                     <Grid item xs={12}>
                         <Typography variant={"h2"} className={'headerFont'} align={"center"}>
