@@ -10,6 +10,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import ResponsiveInstituteName from "./ResponsiveInstituteName";
 
 
 
@@ -21,8 +22,95 @@ class Experience extends React.Component{
                 Experience
             </Typography>
             <Divider className={'centerDivider'} />
-            <Grid container direction={"column"} className={'experienceGrid'}>
-                <Grid item>
+            <div className="timeline">
+                <ul>
+                    <li>
+                        <div className="content">
+                            <ResponsiveInstituteName value={'Strata Health Solutions'} />
+                            <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>Software Developer</Typography>
+                            <Typography variant={"h6"} className={'headerFont'}
+                                        color={"textSecondary"}>July 2016 - Present</Typography>
+                        </div>
+                        <div className="point"></div>
+                        <div className="content">
+                            <ul>
+                                <li >
+                                    <Typography className={'informationFont experienceText'}>
+                                        Full stack developer on the Integration, Dev-Ops & Product development teams. Responsible for end-to-end application and REST API's utilizing
+                                        <i className={'headerFont'}> Java, JSF, Spring, Spring-Security, Spring-Boot, JPA, Maven, Oracle and Postgres.</i>
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Implemented an  <i className={'headerFont'}>SSO</i> platform leveraging  <i className={'headerFont'}>Spring Security/Boot</i>, allowing authentication/authorization
+                                        by means of <i className={'headerFont'}>OAuth2/OIDC, LDAP, Active Directory, SAML 2</i>.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Championed integration projects with external vendors by reviewing technical documentation and meeting with clients.
+                                        Translating their business requirements into projects tailored to specification.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Provided day-to-day production support for client integration interfaces and applications across Canada, UK and USA. Addressing all issues found with efficient solutions or workarounds.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Developed and maintained exceptional <i className={'headerFont'}>REST API's</i>, leveraging  <i className={'headerFont'}>Java, JavaScript, JSON, XML, TCP, HTTP, JAX-RS, Jersey and Rhapsody.</i>
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Created extensive documentation, including <i className={'headerFont'}>API Swagger</i> Docs, interface workflows/specifications and general 'how-to' and training documentation for internal staff.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Trained new staff, and provided mentorship to existing team members. Sharing knowledge and expertise across the development team.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Effectively practiced <i className={'headerFont'}>Agile</i> development methodologies, participating in daily stand-ups, sprint-kick offs and grooming sessions.
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography className={'informationFont experienceText'}>
+                                        Contributed to innovation through the migration of legacy code to modern frameworks.
+                                    </Typography>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="content">
+                            <ResponsiveInstituteName value={'Southern Alberta Institute of Technology (SAIT)'} />
+                            <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>IT -
+                                Software Development Diploma</Typography>
+                            <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2014 -
+                                2016</Typography>
+                        </div>
+                        <div className="middlePoint"></div>
+                    </li>
+                    <li>
+                        <div className="content">
+                            <ResponsiveInstituteName value={'John G. Diefenbaker High School'} />
+                            <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>High
+                                School Diploma</Typography>
+                            <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2006 -
+                                2009</Typography>
+                        </div>
+                        <div className="point"></div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
                     <Timeline>
                         <TimelineItem>
                             <TimelineOppositeContent>
@@ -121,8 +209,6 @@ class Experience extends React.Component{
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>
-                </Grid>
-            </Grid>
         </Container>
 
     )
