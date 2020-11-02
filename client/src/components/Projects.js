@@ -31,10 +31,13 @@ class Projects extends React.Component {
                         creationDate: repo.created_at.substr(0, 10),
                         repo: repo.html_url
                     }
-                })}
+                }),
+                loadingProjects: false}
             ))
-            .catch(error => console.log('Error fetching github repos: ' + error))
-        this.setState({loadingProjects: false})
+            .catch(error => {
+                this.setState({loadingProjects: false})
+                console.log('Error fetching github repos: ' + error)
+            })
     }
 
     render() {
