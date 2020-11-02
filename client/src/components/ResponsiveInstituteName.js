@@ -3,7 +3,6 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 
 function ResponsiveInstituteName(name) {
-
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 

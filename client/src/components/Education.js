@@ -1,16 +1,8 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
 import { withStyles } from '@material-ui/core/styles';
-import {useMediaQuery, useTheme} from "@material-ui/core";
 import ResponsiveInstituteName from "./ResponsiveInstituteName";
 
 const useStyles = theme => ({
