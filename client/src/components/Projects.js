@@ -10,7 +10,8 @@ import IconButton from "@material-ui/core/IconButton";
 class Projects extends React.Component {
 
     state = {
-        rows: []
+        rows: [],
+        loadingProjects: true
     }
 
     componentDidMount() {
@@ -30,9 +31,10 @@ class Projects extends React.Component {
                         creationDate: repo.created_at.substr(0, 10),
                         repo: repo.html_url
                     }
-                })
-            }))
+                })}
+            ))
             .catch(error => console.log('Error fetching github repos: ' + error))
+        this.setState({loadingProjects: false})
     }
 
     render() {
@@ -44,6 +46,7 @@ class Projects extends React.Component {
                 <Divider className={'centerDivider'}/>
                 <DataGrid className={'projectsTable'}
                           columns={this.props.columns}
+                          loading={this.state.loadingProjects}
                           rows={this.state.rows}
                           pageSize={10}
                           autoHeight={true}
