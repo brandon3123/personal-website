@@ -43,7 +43,7 @@ class ContactMe extends React.Component {
                     "emailMessage": this.state.emailMessage,
                 }
             )
-            .then(res => this.showAlert("success", "Thank your for the message!"))
+            .then(res => this.showAlert("success", "Thank you for the message!"))
             .catch(err => this.showAlert("error", "Your message could not be sent!"))
         e.preventDefault();
     }
