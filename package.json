@@ -1,6 +1,7 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server/server.js",
