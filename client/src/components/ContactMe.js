@@ -15,6 +15,7 @@ class ContactMe extends React.Component {
     state = {
         emailAddress: null,
         emailMessage: null,
+        name: null,
         showAlert: false,
         alertType: "",
         alertMessage: ""
@@ -28,11 +29,16 @@ class ContactMe extends React.Component {
         this.setState({emailMessage: e.target.value})
     }
 
+    handleNameChange = (e) => {
+        this.setState({name: e.target.value})
+    }
+
     submitEmail(e) {
         axios
             .post(
                 '/contactMe',
                 {
+                    "name": this.state.name,
                     "emailAddress": this.state.emailAddress,
                     "emailMessage": this.state.emailMessage,
                 }
@@ -75,9 +81,21 @@ class ContactMe extends React.Component {
                     </Grid>
                     <form onSubmit={(e) => this.submitEmail(e)} className={'contactForm'}>
                         <Grid item xs={12} className={'contactGrid'}>
-                            <FormControl className={'contactEmailAddressControl'}>
+                            <FormControl className={'contactTextFieldControl'}>
                                 <TextField
-                                    className={'contactEmailInput'}
+                                    className={'contactTextFieldInput'}
+                                    variant={"outlined"}
+                                    label={'Your full Name'}
+                                    value={this.state.name}
+                                    required={true}
+                                    onChange={this.handleNameChange}
+                                    />
+                            </FormControl>
+                        </Grid>
+                        <Grid item xs={12} className={'contactGrid'}>
+                            <FormControl className={'contactTextFieldControl'}>
+                                <TextField
+                                    className={'contactTextFieldInput'}
                                     variant={"outlined"}
                                     label={'Your Email Address'}
                                     value={this.state.emailAddress}

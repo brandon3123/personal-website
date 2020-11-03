@@ -150,6 +150,10 @@ body {
     font-weight: 400;
 }
 
+.time-line-section {
+    top: 25px;
+}
+
 /*===== Vertical Timeline =====*/
 #conference-timeline {
     position: relative;
@@ -289,7 +293,7 @@ body {
     }
     .timeline-article .meta-date {
         margin-left: 0;
-        left: 20px;
+        left: 40px;
     }
     .timeline-article .content-left-container,
     .timeline-article .content-right-container {
@@ -411,7 +415,7 @@ body {
     justify-content: center;
 }
 
-.contactEmailInput {
+.contactTextFieldInput {
     width: 500px;
 }
 
@@ -433,8 +437,7 @@ body {
     background-color: #0a3d62;
 }
 
-.contactGrid .contactEmailAddressControl {
-    /*display: block;*/
+.contactGrid .contactTextFieldControl {
     padding-bottom: 40px;
 }
 

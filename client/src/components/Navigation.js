@@ -27,7 +27,6 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Education from "./Education";
 import ContactMe from "./ContactMe";
-import Experience2 from "./Experience2";
 
 const drawerWidth = 195;
 
@@ -214,7 +213,7 @@ function ResponsiveDrawer(props) {
                     <Switch>
                         <Route exact path="/" render={() => <About/>}/>
                         <Route exact path="/About" render={() => <About/>}/>
-                        <Route path="/Experience" render={() => <Experience2/>}/>
+                        <Route path="/Experience" render={() => <Experience/>}/>
                         <Route path="/Projects" render={() => <Projects/>}/>
                         <Route path="/Skills" render={() => <Skills/>}/>
                         <Route path="/Education" render={() => <Education/>}/>
