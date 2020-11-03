@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "license": "UNLICENSED",
   "private": true,
-  "proxy": "http://localhost:3002/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/data-grid": "^4.0.0-alpha.8",
@@ -16,7 +15,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^4.0.0",
+    "http-proxy-middleware": "^1.0.6"
   },
   "scripts": {
     "start": "PORT=3030 react-scripts start",
