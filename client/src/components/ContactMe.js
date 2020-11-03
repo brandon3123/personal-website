@@ -85,7 +85,7 @@ class ContactMe extends React.Component {
                                 <TextField
                                     className={'contactTextFieldInput'}
                                     variant={"outlined"}
-                                    label={'Your full Name'}
+                                    label={'Your Full Name'}
                                     value={this.state.name}
                                     required={true}
                                     onChange={this.handleNameChange}
