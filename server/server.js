@@ -15,7 +15,7 @@ const logFormat = morgan(function developmentFormatLine(tokens, req, res) {
     const green = 32;
 
     const methodColorMap = new Map([
-            ['DEconstE', red],
+            ['DELETE', red],
             ['PUT', yellow],
             ['GET', blue],
             ['POST', green]
