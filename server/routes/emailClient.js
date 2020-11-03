@@ -5,9 +5,14 @@ const clientInfo = require('./emailClientInfo.json');
 
 const gmail = mailer.createTransport({
     service: 'gmail',
+    secure: true,
     auth: {
+        type: "OAuth2",
         user: clientInfo.email,
-        pass: clientInfo.password
+        clientId: clientInfo.clientId,
+        clientSecret: clientInfo.clientSecret,
+        accessToken: clientInfo.accessToken,
+        refreshToken: clientInfo.refreshToken,
     }
 });
 
@@ -19,6 +24,7 @@ router.post('/', (req, res) => {
     if (email && message && name) {
         gmail.sendMail(
             {
+                from: email,
                 to: clientInfo.email,
                 subject: 'Personal Site Email From (' + email + ')',
                 text: message
