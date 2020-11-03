@@ -36,12 +36,12 @@ plan.remote(function(remote) {
     remote.rm('-rf /tmp/' + tmpDir);
 
     remote.log('Installing dependencies...');
-    remote.sudo('npm --prefix ~/' + tmpDir + ' install ~/' + tmpDir, {user: serverCredentials.username});
-    remote.sudo('npm --prefix ~/' + tmpDir + '/client' + ' install ~/' + tmpDir + '/client', {user: serverCredentials.username});
+    remote.sudo('npm --prefix ~/' + tmpDir + ' install --production ~/' + tmpDir, {user: serverCredentials.username});
+    remote.sudo('npm --prefix ~/' + tmpDir + '/client' + ' install --production ~/' + tmpDir + '/client', {user: serverCredentials.username});
 
     remote.log('Reload application...');
     remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+appName, {user: serverCredentials.username});
-    remote.exec('pm2 delete all');
+    remote.exec('pm2 delete website');
     remote.exec('cd ' + appName + "/");
     remote.exec('pm2 start npm --name "website" -- --prefix ~/' + tmpDir + ' run dev');
 });
