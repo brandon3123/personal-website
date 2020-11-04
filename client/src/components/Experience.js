@@ -13,12 +13,12 @@ class Experience extends React.Component {
                     Experience
                 </Typography>
                 <Divider className={'centerDivider'}/>
-                <section id="conference-timeline" className={'time-line-section'}>
+                <section id="experience-timeline" className={'time-line-section'}>
                     <div className="conference-center-line"></div>
                     <div className="experience-timeline-content">
                         <div className="timeline-article">
                             <div className="content-left-container">
-                                <div className="content-left">
+                                <div className="content-left pad-left-70">
                                     <Typography className={'headerFont'} variant={'h4'}>Strata Health Solutions</Typography>
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>Software
                                         Developer</Typography>

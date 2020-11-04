@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Overpass:wght@800&display=swap');
 
+.pad-left-70 {
+    padding-left: 70px;
+}
+
 body {
     background: #e6e6e6;
     font-family: "Roboto", sans-serif;
@@ -17,6 +21,13 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+#experience-timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
     display: table;
@@ -49,6 +60,25 @@ body {
 #conference-timeline .experience-timeline-content {
     padding-top: 10px;
 }
+
+#experience-timeline .conference-center-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    padding-top: 100px;
+    background: #bdbdbd;
+    z-index: -1;
+}
+#experience-timeline .conference-timeline-content {
+    padding-top: 40px;
+    padding-bottom: 67px;
+}
+#experience-timeline .experience-timeline-content {
+    padding-top: 10px;
+}
+
 .timeline-article {
     width: 100%;
     height: 100%;
@@ -112,6 +142,20 @@ body {
 /*    content: "\f0d9";*/
 /*    left: -8px;*/
 /*}*/
+
+#experience-timeline .timeline-article .meta-date {
+    position: absolute;
+    top: 0;
+    left: 51.8%;
+    width: 20px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    height: 20px;
+    margin-left: -31px;
+    color: #fff;
+    border-radius: 100%;
+    background: #0a3d62;
+}
+
 .timeline-article .meta-date {
     position: absolute;
     top: 0;
@@ -139,8 +183,13 @@ body {
     line-height: 10px;
 }
 /*===== // Vertical Timeline =====*/
-
 /*===== Resonsive Vertical Timeline =====*/
+@media only screen and (min-width: 830px) and (max-width: 1030px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 52.4%;
+    }
+}
+
 @media only screen and (max-width: 830px) {
     #conference-timeline .timeline-start,
     #conference-timeline .timeline-end {
@@ -150,10 +199,19 @@ body {
         margin-left: 0;
         left: 50px;
     }
+    #experience-timeline .conference-center-line {
+        margin-left: 0;
+        left: 50px;
+    }
     .timeline-article .meta-date {
         margin-left: 0;
         left: 40px;
     }
+    #experience-timeline .timeline-article .meta-date {
+        margin-left: 0;
+        left: 40px;
+    }
+
     .timeline-article .content-left-container,
     .timeline-article .content-right-container {
         max-width: 100%;
