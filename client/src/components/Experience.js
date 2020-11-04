@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
-import ExperienceUlTag from "./experienceUlTag";
+import ExperienceUlTag from "./ExperienceUlTag";
 
 class Experience extends React.Component {
 
@@ -32,7 +32,7 @@ class Experience extends React.Component {
                                         <li>
                                             <Typography className={'informationFont experienceText'}>
                                                 Full stack developer on the Integration, Dev-Ops & Product development
-                                                teams. Responsible for end-to-end application and REST API's utilizing
+                                                teams. Responsible for end-to-end application development, utilizing
                                                 <i className={'headerFont'}> Java, JSF, Spring, Spring-Security,
                                                     Spring-Boot, JPA, Maven, Oracle and Postgres.</i>
                                             </Typography>
@@ -41,8 +41,7 @@ class Experience extends React.Component {
                                             <Typography className={'informationFont experienceText'}>
                                                 Implemented an <i className={'headerFont'}>SSO</i> platform
                                                 leveraging <i className={'headerFont'}>Spring Security/Boot</i>,
-                                                allowing authentication/authorization
-                                                by means of <i className={'headerFont'}>OAuth2/OIDC, LDAP, Active
+                                                allowing authentication/authorization by means of <i className={'headerFont'}>OAuth2/OIDC, LDAP, Active
                                                 Directory, SAML 2</i>.
                                             </Typography>
                                         </li>
