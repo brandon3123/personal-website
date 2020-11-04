@@ -18,7 +18,7 @@ class Experience extends React.Component {
                     <div className="experience-timeline-content">
                         <div className="timeline-article">
                             <div className="content-left-container">
-                                <div className="content-left pad-left-70">
+                                <div className="content-left pad-left-120">
                                     <Typography className={'headerFont'} variant={'h4'}>Strata Health Solutions</Typography>
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>Software
                                         Developer</Typography>
