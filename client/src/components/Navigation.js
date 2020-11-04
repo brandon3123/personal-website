@@ -95,41 +95,47 @@ function ResponsiveDrawer(props) {
         setMobileOpen(!mobileOpen);
     };
 
+    const autoCloseDrawerFromOnClickForMobile = () => {
+        if (mobileOpen) {
+            setMobileOpen(!mobileOpen);
+        }
+    };
+
     const drawer = (
         <div>
             <div className={classes.toolbar}/>
             <List>
-                <ListItem key={'About'} component={Link} to={"/About"} onClick={handleDrawerToggle}>
+                <ListItem key={'About'} component={Link} to={"/About"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <AccountCircle style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'About'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Experience'} component={Link} to={"/Experience"} onClick={handleDrawerToggle}>
+                <ListItem key={'Experience'} component={Link} to={"/Experience"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <WorkIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Experience'} className={'navLink'} onClick={handleDrawerToggle}/>
+                    <ListItemText primary={'Experience'} className={'navLink'} onClick={autoCloseDrawerFromOnClickForMobile}/>
                 </ListItem>
                 <ListItem key={'Projects'} component={Link} to={"/Projects"}>
                     <ListItemIcon>
                         <GitHubIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Projects'} className={'navLink'} onClick={handleDrawerToggle}/>
+                    <ListItemText primary={'Projects'} className={'navLink'} onClick={autoCloseDrawerFromOnClickForMobile}/>
                 </ListItem>
-                <ListItem key={'Skills'} component={Link} to={"/Skills"} onClick={handleDrawerToggle}>
+                <ListItem key={'Skills'} component={Link} to={"/Skills"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <CodeIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Skills'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Education'} component={Link} to={"/Education"} onClick={handleDrawerToggle}>
+                <ListItem key={'Education'} component={Link} to={"/Education"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <SchoolIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Education'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Contact'} component={Link} to={"/Contact"} onClick={handleDrawerToggle}>
+                <ListItem key={'Contact'} component={Link} to={"/Contact"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <MailIcon style={{color: "white"}}/>
                     </ListItemIcon>
