@@ -15,7 +15,7 @@ class Experience extends React.Component {
                 <Divider className={'centerDivider'}/>
                 <section id="conference-timeline" className={'time-line-section'}>
                     <div className="conference-center-line"></div>
-                    <div className="conference-timeline-content">
+                    <div className="experience-timeline-content">
                         <div className="timeline-article">
                             <div className="content-left-container">
                                 <div className="content-left">

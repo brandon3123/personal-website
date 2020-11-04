@@ -27,6 +27,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Education from "./Education";
 import ContactMe from "./ContactMe";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 
 const drawerWidth = 195;
 
@@ -98,37 +99,37 @@ function ResponsiveDrawer(props) {
         <div>
             <div className={classes.toolbar}/>
             <List>
-                <ListItem key={'About'} component={Link} to={"/About"}>
+                <ListItem key={'About'} component={Link} to={"/About"} onClick={handleDrawerToggle}>
                     <ListItemIcon>
                         <AccountCircle style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'About'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Experience'} component={Link} to={"/Experience"}>
+                <ListItem key={'Experience'} component={Link} to={"/Experience"} onClick={handleDrawerToggle}>
                     <ListItemIcon>
                         <WorkIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Experience'} className={'navLink'}/>
+                    <ListItemText primary={'Experience'} className={'navLink'} onClick={handleDrawerToggle}/>
                 </ListItem>
                 <ListItem key={'Projects'} component={Link} to={"/Projects"}>
                     <ListItemIcon>
                         <GitHubIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Projects'} className={'navLink'}/>
+                    <ListItemText primary={'Projects'} className={'navLink'} onClick={handleDrawerToggle}/>
                 </ListItem>
-                <ListItem key={'Skills'} component={Link} to={"/Skills"}>
+                <ListItem key={'Skills'} component={Link} to={"/Skills"} onClick={handleDrawerToggle}>
                     <ListItemIcon>
                         <CodeIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Skills'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Education'} component={Link} to={"/Education"}>
+                <ListItem key={'Education'} component={Link} to={"/Education"} onClick={handleDrawerToggle}>
                     <ListItemIcon>
                         <SchoolIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Education'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Contact'} component={Link} to={"/Contact"}>
+                <ListItem key={'Contact'} component={Link} to={"/Contact"} onClick={handleDrawerToggle}>
                     <ListItemIcon>
                         <MailIcon style={{color: "white"}}/>
                     </ListItemIcon>
@@ -179,12 +180,13 @@ function ResponsiveDrawer(props) {
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                     <Hidden mdUp implementation="css">
-                        <Drawer
+                        <SwipeableDrawer
                             container={container}
                             variant="temporary"
                             anchor={theme.direction === "rtl" ? "right" : "left"}
                             open={mobileOpen}
                             onClose={handleDrawerToggle}
+                            on
                             classes={{
                                 paper: classes.drawerPaper
                             }}
@@ -193,7 +195,7 @@ function ResponsiveDrawer(props) {
                             }}
                         >
                             {drawer}
-                        </Drawer>
+                        </SwipeableDrawer>
                     </Hidden>
                     <Hidden mdDown implementation="css">
                         <Drawer

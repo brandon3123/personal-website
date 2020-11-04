@@ -43,8 +43,11 @@ body {
     z-index: -1;
 }
 #conference-timeline .conference-timeline-content {
-    padding-top: 67px;
+    padding-top: 40px;
     padding-bottom: 67px;
+}
+#conference-timeline .experience-timeline-content {
+    padding-top: 10px;
 }
 .timeline-article {
     width: 100%;
