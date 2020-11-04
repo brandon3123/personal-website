@@ -189,7 +189,6 @@ class Skills extends React.Component {
                     </Card>
                 </Grid>
 
-
                 <Grid item>
                     <Card>
                         <CardContent>
