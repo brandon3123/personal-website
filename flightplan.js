@@ -36,9 +36,9 @@ plan.remote(function(remote) {
     remote.rm('-rf /tmp/' + tmpDir);
 
     remote.log('Installing dependencies...');
-    remote.sudo('npm --prefix ~/' + tmpDir + ' install --production ~/' + tmpDir,  {user: serverCredentials.username});
-    remote.sudo('npm --prefix ~/' + tmpDir + '/server install --production ~/' + tmpDir + '/server',  {user: serverCredentials.username});
-    remote.sudo('npm --prefix ~/' + tmpDir + '/client install --production ~/' + tmpDir + '/client', {user: serverCredentials.username});
+    remote.sudo('npm --prefix ~/' + tmpDir + ' ci --production ~/' + tmpDir,  {user: serverCredentials.username});
+    remote.sudo('npm --prefix ~/' + tmpDir + '/client ci --production ~/' + tmpDir + '/client', {user: serverCredentials.username});
+    remote.sudo('npm --prefix ~/' + tmpDir + '/server ci --production ~/' + tmpDir + '/server',  {user: serverCredentials.username});
 
     remote.log('Reload application...');
     remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+appName, {user: serverCredentials.username});
