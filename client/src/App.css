@@ -285,6 +285,10 @@ body {
     line-height: 2em;
 }
 
+.notFoundContainer {
+    padding-top: 4%;
+}
+
 .aboutMeContainer {
     padding-top: 6%;
 }

@@ -28,6 +28,7 @@ import Skills from "./Skills";
 import Education from "./Education";
 import ContactMe from "./ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import NotFound from "./NotFound";
 
 const drawerWidth = 195;
 
@@ -226,6 +227,7 @@ function ResponsiveDrawer(props) {
                         <Route path="/Skills" render={() => <Skills/>}/>
                         <Route path="/Education" render={() => <Education/>}/>
                         <Route path="/Contact" render={() => <ContactMe/>}/>
+                        <Route render={() => <NotFound/>}/>
                     </Switch>
                 </main>
             </BrowserRouter>
