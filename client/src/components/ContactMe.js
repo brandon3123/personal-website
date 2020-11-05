@@ -21,6 +21,10 @@ class ContactMe extends React.Component {
         alertMessage: ""
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     handleEmailChange = (e) => {
         this.setState({emailAddress: e.target.value})
     }

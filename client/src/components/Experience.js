@@ -6,6 +6,10 @@ import ExperienceUlTag from "./ExperienceUlTag";
 
 class Experience extends React.Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         return (
             <Container className={'pageContainer'}>

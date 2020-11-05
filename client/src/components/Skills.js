@@ -50,6 +50,10 @@ import jaxrs from "../images/jaxrs.png"
 import bamboo from "../images/bamboo.png"
 
 class Skills extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         return <Container className={'pageContainer'}>
             <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
