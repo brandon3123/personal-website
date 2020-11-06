@@ -35,14 +35,19 @@ const logFormat = morgan(function developmentFormatLine(tokens, req, res) {
     // get colored function
     let fn = developmentFormatLine[statusColor, methodColor]
 
+    const body = method !== "GET" ? JSON.stringify(req.body, null, 2) : null;
+
     if (!fn) {
-        // compile
-        fn = developmentFormatLine[statusColor, methodColor] =
-            morgan.compile(
-                '\x1b[' + methodColor + 'm:method ' +
-                '\x1b[0m:url ' +
-                '\x1b[' + statusColor + 'm:status\x1b' +
-                '[0m :response-time ms - :res[content-length]\x1b[0m')
+        let format = '\x1b[' + methodColor + 'm:method ' +
+            '\x1b[0m:url ' +
+            '\x1b[' + statusColor + 'm:status\x1b' +
+            '[0m :response-time ms - :res[content-length]\x1b[0m'
+
+        if (body) {
+            format += '\n' + body + '\n';
+        }
+
+        fn = developmentFormatLine[statusColor, methodColor] = morgan.compile(format)
     }
 
     return fn(tokens, req, res)
