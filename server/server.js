@@ -39,7 +39,6 @@ const logFormat = morgan(function developmentFormatLine(tokens, req, res) {
         // compile
         fn = developmentFormatLine[statusColor, methodColor] =
             morgan.compile(
-                '\x1b[0m:date[iso] ' +
                 '\x1b[' + methodColor + 'm:method ' +
                 '\x1b[0m:url ' +
                 '\x1b[' + statusColor + 'm:status\x1b' +

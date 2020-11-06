@@ -2,7 +2,7 @@ const plan = require('flightplan');
 const appName = 'personal-website';
 const serverCredentials = require('./serverCredentials.json');
 
-const tmpDir = appName + '-' + new Date().getTime();
+const tmpDir = appName + '-' + new Date().toISOString().substring(0, 10)
 
 plan.target('deploy', [
     {
@@ -40,9 +40,13 @@ plan.remote(function(remote) {
     remote.sudo('npm --prefix ~/' + tmpDir + '/client ci --production ~/' + tmpDir + '/client', {user: serverCredentials.username});
     remote.sudo('npm --prefix ~/' + tmpDir + '/server ci --production ~/' + tmpDir + '/server',  {user: serverCredentials.username});
 
+    remote.log('Creating deployment log file...');
+    remote.sudo('touch /home/deploy/logs/' + tmpDir + '.log', {user: serverCredentials.username});
+    remote.sudo('chmod +w /home/deploy/logs/' + tmpDir + '.log', {user: serverCredentials.username});
+
     remote.log('Reload application...');
-    remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+appName, {user: serverCredentials.username});
+    remote.sudo('ln -snf ~/' + tmpDir + ' ~/'+ appName, {user: serverCredentials.username});
     remote.exec('pm2 delete website');
     remote.exec('cd ' + appName + "/");
-    remote.exec('pm2 start npm --name "website" -- --prefix ~/' + tmpDir + ' run production');
+    remote.exec('pm2 start npm --time -l --log "/home/deploy/logs/' + tmpDir + '.log" --cron "0 2 * * *" --name "website" -- --prefix ~/' + tmpDir + ' run production');
 });

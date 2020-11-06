@@ -18,7 +18,7 @@ class NotFound extends React.Component{
                 >
                     <Grid item>
                         <Typography variant={"h1"} className={'headerFont'}>
-                            <img src={notFound} alt={'404 image'}></img>
+                            <img src={notFound} alt={'404 error'}></img>
                         </Typography>
                     </Grid>
                     <Grid item>
