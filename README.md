@@ -1,6 +1,6 @@
 # Personal Website
 
-<a href="https://brandon-nolan.ca" target="_blank">Check it out for yourself!</a>
+[Check it out for yourself!](https://www.brandon-nolan.ca)
 
 This is the repository for my personal website! Here is the stack.
 
