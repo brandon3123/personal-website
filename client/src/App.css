@@ -180,9 +180,58 @@ body {
 }
 /*===== // Vertical Timeline =====*/
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (min-width: 830px) and (max-width: 1100px) {
+
+@media only screen and (min-width: 830px) and (max-width: 900px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 53.1%;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 999px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 52.6%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
     #experience-timeline .timeline-article .meta-date {
         left: 52.4%;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1150px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 52.3%;
+    }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1160px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 52.1%;
+    }
+}
+
+@media only screen and (min-width: 1161px) and (max-width: 1270px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 51.9%;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1400px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 52.2%;
+    }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1520px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 51.9%;
+    }
+}
+
+@media only screen and (min-width: 1521px) and (max-width: 1550px) {
+    #experience-timeline .timeline-article .meta-date {
+        left: 51.8%;
     }
 }
 
