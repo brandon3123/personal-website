@@ -29,6 +29,7 @@ import Education from "./Education";
 import ContactMe from "./ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import NotFound from "./NotFound";
+import BannerImage from "../images/coding-background.jpg"
 
 const drawerWidth = 195;
 
@@ -43,7 +44,8 @@ const useStyles = makeStyles(theme => ({
         }
     },
     appBar: {
-        backgroundColor: "#0a3d62",
+        boxShadow: "inset 0 0 0 1000px rgba(10,61,98, .97)",
+        backgroundImage:`url(${BannerImage})`,
         border: "none",
         marginLeft: drawerWidth,
         [theme.breakpoints.up("lg")]: {
@@ -62,7 +64,8 @@ const useStyles = makeStyles(theme => ({
         flexDirection: "row",
         border: "none",
         width: drawerWidth,
-        backgroundColor: "#0a3d62",
+        boxShadow: "inset 0 0 0 1000px rgba(10,61,98, .97)",
+        backgroundImage:`url(${BannerImage})`,
         alignItems: "center",
         paddingBottom: 80
     },
