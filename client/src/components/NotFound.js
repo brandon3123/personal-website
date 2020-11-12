@@ -2,7 +2,7 @@ import React from 'react'
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import notFound from "../images/notFound.png";
+import notFound from "../images/skills/notFound.png";
 import {Hidden} from "@material-ui/core";
 
 class NotFound extends React.Component{

@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import headShot from '../images/mugShot.png';
+import headShot from '../images/about/mugShot.png';
 import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
