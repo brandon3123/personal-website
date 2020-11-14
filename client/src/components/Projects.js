@@ -6,6 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
+import {Hidden} from "@material-ui/core";
 
 class Projects extends React.Component {
 
@@ -48,6 +49,11 @@ class Projects extends React.Component {
                     Projects
                 </Typography>
                 <Divider className={'centerDivider'}/>
+                <Hidden lgUp>
+                    <Typography variant={"p"} className={'scrollForDetails headerFont'} align={"center"}>
+                        <i>Scroll for more details</i>
+                    </Typography>
+                </Hidden>
                 <DataGrid className={'projectsTable'}
                           columns={this.props.columns}
                           loading={this.state.loadingProjects}

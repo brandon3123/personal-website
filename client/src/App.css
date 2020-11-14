@@ -426,6 +426,13 @@ body {
     width: 500px;
 }
 
+.scrollForDetails {
+    position: relative;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
 .projectsTable .githubLink {
     color: white;
     background-color: #0a3d62;
@@ -438,7 +445,6 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: #d4d8dd;
     font-size: 17px;
-
 }
 
 #vertical-tabpanel-1 > div > div > div:nth-child(n) > div > div.MuiDataGrid-mainGridContainer > div.MuiDataGrid-columnsContainer > div > div:nth-child(n) > div.MuiDataGrid-columnSeparator > svg {

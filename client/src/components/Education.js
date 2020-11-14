@@ -33,7 +33,7 @@ class Education extends React.Component {
                         <div className="timeline-article">
                             <div className="content-left-container">
                                 <div className="content-left">
-                                    <Typography className={'headerFont'} variant={'h4'}>Sourthern Alberta Institute of
+                                    <Typography className={'headerFont'} variant={'h4'}>Southern Alberta Institute of
                                         Technology (SAIT)</Typography>
                                     <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>IT -
                                         Software Development Diploma</Typography>
