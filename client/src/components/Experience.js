@@ -80,7 +80,7 @@ class Experience extends React.Component {
                                         </li>
                                         <li>
                                             <Typography className={'informationFont experienceText'}>
-                                                Trained new staff, and provided mentorship to existing team members.
+                                                Trained new staff and provided mentorship to existing team members.
                                                 Sharing knowledge and expertise across the development team.
                                             </Typography>
                                         </li>
