@@ -17,6 +17,17 @@ class Education extends React.Component {
                 <Divider className={'centerDivider'}/>
                 <section id="conference-timeline" className={'time-line-section'}>
                     <div className="conference-center-line"></div>
+                    <div className="timeline-article">
+                        <div className="content-left-container">
+                            <div className="content-left">
+                                <Typography className={'headerFont'} variant={'h4'}>Amazon Web Services (AWS)</Typography>
+                                <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>AWS Certified Developer Associate</Typography>
+                                <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2021</Typography>
+                            </div>
+                        </div>
+                        <div className="meta-date">
+                        </div>
+                    </div>
                     <div className="conference-timeline-content">
                         <div className="timeline-article">
                             <div className="content-right-container">
