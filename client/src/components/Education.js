@@ -21,7 +21,7 @@ class Education extends React.Component {
                         <div className="content-left-container">
                             <div className="content-left">
                                 <Typography className={'headerFont'} variant={'h4'}>Amazon Web Services (AWS)</Typography>
-                                <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>AWS Certified Developer Associate</Typography>
+                                <Typography variant={"h5"} className={'headerFont'} color={"textSecondary"}>AWS Certified Developer Associate Certificate</Typography>
                                 <Typography variant={"h6"} className={'headerFont'} color={"textSecondary"}>2021</Typography>
                             </div>
                         </div>
