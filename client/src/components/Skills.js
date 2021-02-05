@@ -275,7 +275,7 @@ class Skills extends React.Component {
                     <Card>
                         <CardContent>
                             <Typography variant={"h4"} className={'headerFont'}>
-                                Cloud Systems
+                                Virtualization
                             </Typography>
                             <br/>
                             <Grid container>
