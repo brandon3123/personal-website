@@ -509,6 +509,11 @@ body {
     height: 80px !important;
 }
 
+.awsSkillIcon {
+    width: 150px !important;
+    height: 80px !important;
+}
+
 .skillsIconPaddingRight {
     padding-right: 5px;
 }

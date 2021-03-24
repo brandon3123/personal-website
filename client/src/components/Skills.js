@@ -48,6 +48,7 @@ import primeFaces from "../images/skills/primeFaces.png"
 import plsql from "../images/skills/plsql.png"
 import jaxrs from "../images/skills/jaxrs.png"
 import bamboo from "../images/skills/bamboo.png"
+import aws from "../images/skills/aws.png"
 
 class Skills extends React.Component {
     componentDidMount() {
@@ -275,10 +276,14 @@ class Skills extends React.Component {
                     <Card>
                         <CardContent>
                             <Typography variant={"h4"} className={'headerFont'}>
-                                Virtualization
+                                Cloud/Virtualization
                             </Typography>
                             <br/>
                             <Grid container>
+                                <Grid item className={'skillGridItem'}>
+                                    <Avatar src={aws} className={'awsSkillIcon'} variant={"square"}></Avatar>
+                                    <Typography variant={"h6"} className={'informationFont'}>AWS</Typography>
+                                </Grid>
                                 <Grid item className={'skillGridItem'}>
                                     <Avatar src={parallels} className={'skillsIcon'} variant={"square"}></Avatar>
                                     <Typography variant={"h6"} className={'informationFont'}>Parallels</Typography>
