@@ -16,6 +16,7 @@ body {
 
 .time-line-section {
     top: 25px;
+    padding-top: 25px;
 }
 
 /*===== Vertical Timeline =====*/
@@ -57,9 +58,7 @@ body {
     background: #bdbdbd;
     z-index: -1;
 }
-#conference-timeline .conference-timeline-content {
-    padding-bottom: 67px;
-}
+
 #conference-timeline .experience-timeline-content {
     padding-top: 10px;
 }
