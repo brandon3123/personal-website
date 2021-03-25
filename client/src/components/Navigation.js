@@ -25,13 +25,13 @@ import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Education from "./Education";
+import Qualifications from "./Qualifications";
 import ContactMe from "./ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import NotFound from "./NotFound";
 import BannerImage from "../images/coding-background.jpg"
 
-const drawerWidth = 195;
+const drawerWidth = 215;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -133,11 +133,11 @@ function ResponsiveDrawer(props) {
                     </ListItemIcon>
                     <ListItemText primary={'Skills'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Education'} component={Link} to={"/Education"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'Qualifications'} component={Link} to={"/Qualifications"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <SchoolIcon style={{color: "white"}}/>
                     </ListItemIcon>
-                    <ListItemText primary={'Education'} className={'navLink'}/>
+                    <ListItemText primary={'Qualifications'} className={'navLink'}/>
                 </ListItem>
                 <ListItem key={'Contact'} component={Link} to={"/Contact"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
@@ -228,7 +228,7 @@ function ResponsiveDrawer(props) {
                         <Route path="/Experience" render={() => <Experience/>}/>
                         <Route path="/Projects" render={() => <Projects/>}/>
                         <Route path="/Skills" render={() => <Skills/>}/>
-                        <Route path="/Education" render={() => <Education/>}/>
+                        <Route path="/Qualifications" render={() => <Qualifications/>}/>
                         <Route path="/Contact" render={() => <ContactMe/>}/>
                         <Route render={() => <NotFound/>}/>
                     </Switch>
