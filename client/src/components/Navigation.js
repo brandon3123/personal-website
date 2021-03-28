@@ -109,37 +109,37 @@ function ResponsiveDrawer(props) {
         <div>
             <div className={classes.toolbar}/>
             <List>
-                <ListItem key={'About'} component={Link} to={"/About"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'About'} component={Link} to={"/about"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <AccountCircle style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'About'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Experience'} component={Link} to={"/Experience"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'Experience'} component={Link} to={"/experience"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <WorkIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Experience'} className={'navLink'} onClick={autoCloseDrawerFromOnClickForMobile}/>
                 </ListItem>
-                <ListItem key={'Projects'} component={Link} to={"/Projects"}>
+                <ListItem key={'Projects'} component={Link} to={"/projects"}>
                     <ListItemIcon>
                         <GitHubIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Projects'} className={'navLink'} onClick={autoCloseDrawerFromOnClickForMobile}/>
                 </ListItem>
-                <ListItem key={'Skills'} component={Link} to={"/Skills"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'Skills'} component={Link} to={"/skills"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <CodeIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Skills'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Qualifications'} component={Link} to={"/Qualifications"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'Qualifications'} component={Link} to={"/qualifications"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <SchoolIcon style={{color: "white"}}/>
                     </ListItemIcon>
                     <ListItemText primary={'Qualifications'} className={'navLink'}/>
                 </ListItem>
-                <ListItem key={'Contact'} component={Link} to={"/Contact"} onClick={autoCloseDrawerFromOnClickForMobile}>
+                <ListItem key={'Contact'} component={Link} to={"/contact"} onClick={autoCloseDrawerFromOnClickForMobile}>
                     <ListItemIcon>
                         <MailIcon style={{color: "white"}}/>
                     </ListItemIcon>
@@ -224,12 +224,12 @@ function ResponsiveDrawer(props) {
                     <div className={classes.toolbar}/>
                     <Switch>
                         <Route exact path="/" render={() => <About/>}/>
-                        <Route exact path="/About" render={() => <About/>}/>
-                        <Route path="/Experience" render={() => <Experience/>}/>
-                        <Route path="/Projects" render={() => <Projects/>}/>
-                        <Route path="/Skills" render={() => <Skills/>}/>
-                        <Route path="/Qualifications" render={() => <Qualifications/>}/>
-                        <Route path="/Contact" render={() => <ContactMe/>}/>
+                        <Route exact path="/about" render={() => <About/>}/>
+                        <Route path="/experience" render={() => <Experience/>}/>
+                        <Route path="/projects" render={() => <Projects/>}/>
+                        <Route path="/skills" render={() => <Skills/>}/>
+                        <Route path="/qualifications" render={() => <Qualifications/>}/>
+                        <Route path="/contact" render={() => <ContactMe/>}/>
                         <Route render={() => <NotFound/>}/>
                     </Switch>
                 </main>
