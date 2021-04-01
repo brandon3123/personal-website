@@ -22,7 +22,7 @@ class Projects extends React.Component {
 
     fetchProjects() {
         axios
-            .get('https://api.github.com/users/' + this.props.username + '/repos')
+            .get('https://api.github.com/users/' + this.props.username + '/repos?sort=updated')
             .then(result => this.setState({
                 rows: result.data.map((repo, index) => {
                     return {
@@ -60,7 +60,6 @@ class Projects extends React.Component {
                           rows={this.state.rows}
                           pageSize={10}
                           autoHeight={true}
-                          sortModel={this.props.sortModel}
                           disableSelectionOnClick={true}
                 />
             </Container>
@@ -108,12 +107,6 @@ Projects.defaultProps = {
             renderCell: (params) => (
                 <IconButton className={'githubLink'} href={params.value} target={'_blank'}><GitHubIcon/></IconButton>
             )
-        }
-    ],
-    sortModel: [
-        {
-            field: 'creationDate',
-            sort: 'desc'
         }
     ]
 }
