@@ -1,6 +1,13 @@
 const plan = require('flightplan');
 const appName = 'personal-website';
-const serverCredentials = require('./serverCredentials.json');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const serverCredentials = {
+    host: process.env.HOST,
+    username: process.env.USERNAME,
+    password: process.env.PASSWORD
+}
 
 const tmpDir = appName + '-' + new Date().toISOString().substring(0, 10)
 
@@ -25,7 +32,7 @@ plan.local(function(local) {
     let filesToCopy = local.exec('git ls-files', {silent: true});
     // rsync files to all the destination's hosts
     local.transfer(filesToCopy, '/tmp/' + tmpDir);
-    local.transfer('server/routes/emailClientInfo.json', '/tmp/' + tmpDir)
+    local.transfer('server/.env', '/tmp/' + tmpDir)
 });
 
 // run commands on remote hosts (destinations)

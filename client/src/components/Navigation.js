@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: -12
     },
     socialLinkIcon: {
-        [theme.breakpoints.down("md")]: {
+        [theme.breakpoints.down("xs")]: {
             fontSize: "smaller"
         },
         fontSize: "larger",

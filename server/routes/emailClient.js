@@ -1,32 +1,41 @@
 const express = require('express');
 const router = express.Router();
 const mailer = require('nodemailer');
-const clientInfo = require('./emailClientInfo.json');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const email = process.env.EMAIL
+const oauthConfig = {
+    clientId: process.env.OAUTH_CLIENT_ID,
+    clientSecret: process.env.OAUTH_CLIENT_SECRET,
+    accessToken: process.env.OAUTH_ACCESS_TOKEN,
+    refreshToken: process.env.OAUTH_REFRESH_TOKEN
+}
 
 const gmail = mailer.createTransport({
     service: 'gmail',
     secure: true,
     auth: {
         type: "OAuth2",
-        user: clientInfo.email,
-        clientId: clientInfo.clientId,
-        clientSecret: clientInfo.clientSecret,
-        accessToken: clientInfo.accessToken,
-        refreshToken: clientInfo.refreshToken,
+        user: email,
+        clientId: oauthConfig.clientId,
+        clientSecret: oauthConfig.clientSecret,
+        accessToken: oauthConfig.accessToken,
+        refreshToken: oauthConfig.refreshToken,
     }
 });
 
 router.post('/', (req, res) => {
-    const email = req.body.emailAddress;
+    const from = req.body.emailAddress;
     const message = req.body.emailMessage;
     const name = req.body.name;
 
-    if (email && message && name) {
+    if (from && message && name) {
         gmail.sendMail(
             {
-                from: email,
-                to: clientInfo.email,
-                subject: 'Personal Site Email From (' + email + ')',
+                from: from,
+                to: email,
+                subject: 'Personal Site Email From (' + from + ')',
                 text: message
                     + '\n\nSincerely,\n\n'
                     + name

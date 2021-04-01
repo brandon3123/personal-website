@@ -7,15 +7,15 @@
 /.pnp
 .pnp.js
 
-# credentials
-/serverCredentials.json
-/server/routes/emailClientInfo.json
-
 # testing
 /coverage
 
 # production
 /build
+
+# config
+.env
+/server/.env
 
 # misc
 .DS_Store
