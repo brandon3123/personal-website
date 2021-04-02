@@ -15,7 +15,7 @@ class Skills extends React.Component {
 
     render() {
         return <Container className={'pageContainer'}>
-            <PageHeader title={'Skills'} styleName={'experienceHeader'}/>
+            <PageHeader title={'Skills'}/>
             <Grid spacing={2} className={'skillsGrid'} direction={"column"} container>
                 <Grid item>
                     <LanguagesAndFrameworks/>

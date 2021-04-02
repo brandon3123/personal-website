@@ -13,7 +13,7 @@ class Projects extends React.Component {
     render() {
         return (
             <Container className={'pageContainer'}>
-                <PageHeader title={'Projects'} styleName={'experienceHeader'}/>
+                <PageHeader title={'Projects'}/>
                 <Hidden lgUp>
                     <Typography variant={"p"} className={'scrollForDetails headerFont'} align={"center"}>
                         <i>Scroll for more details</i>

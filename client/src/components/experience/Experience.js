@@ -11,7 +11,7 @@ class Experience extends React.Component {
     render() {
         return (
             <Container className={'pageContainer'}>
-                <PageHeader title={'Experience'} styleName={'experienceHeader'}/>
+                <PageHeader title={'Experience'}/>
                 <ExperienceTimeLine/>
             </Container>
         )

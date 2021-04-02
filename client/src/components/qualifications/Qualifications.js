@@ -11,7 +11,7 @@ class Qualifications extends React.Component {
     render() {
         return (
             <Container className={'pageContainer'}>
-                <PageHeader title={'Qualifications'} styleName={'qualificationsHeader'}/>
+                <PageHeader title={'Qualifications'}/>
                 <QualificationsTimeLine/>
             </Container>
         )

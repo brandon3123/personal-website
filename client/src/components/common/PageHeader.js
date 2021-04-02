@@ -10,7 +10,7 @@ class PageHeader extends React.Component{
     render() {
         return (
             <div>
-                <Typography variant={"h2"} className={this.props.styleName + ' headerFont'} align={"center"}>
+                <Typography variant={"h2"} className={'pad-bottom-5 headerFont'} align={"center"}>
                     {this.props.title}
                 </Typography>
                 <Divider className={'centerDivider'}/>

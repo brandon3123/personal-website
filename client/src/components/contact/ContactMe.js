@@ -14,7 +14,7 @@ class ContactMe extends React.Component {
             <Container className={'pageContainer'}>
                 <Grid container spacing={3} justify={"center"}>
                     <Grid item xs={12}>
-                        <PageHeader title={'Contact Me'} styleName={'experienceHeader'}/>
+                        <PageHeader title={'Contact Me'}/>
                         <br/>
                     </Grid>
                     <ContactMeForm/>

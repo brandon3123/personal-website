@@ -364,7 +364,7 @@ body {
     letter-spacing: 1.6px !important;
 }
 
-.experienceHeader {
+.pad-bottom-5 {
     padding-bottom: 5px;
 }
 
@@ -461,10 +461,6 @@ body {
 .educationContainer {
     padding-top: 5%;
     padding-bottom: 5%;
-}
-
-.qualificationsHeader {
-    padding-bottom: 5px;
 }
 
 .educationGrid {
