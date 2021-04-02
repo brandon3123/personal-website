@@ -2,7 +2,7 @@ import React from 'react';
 import ExperienceLeftUlTag from "../shared/ExperienceLeftUlTag";
 import TimeLineContent from "../../common/timeline/TimeLineContent";
 import TimeLineLeft from "../../common/timeline/TimeLineLeft";
-import ExperiencePosition from "../shared/ExperiencePosition";
+import TimeLinePoint from "../../common/timeline/TimeLinePoint";
 import TimeLineRight from "../../common/timeline/TimeLineRight";
 import ExperienceListItem from "../shared/ExperienceListItem";
 import TimeLine from "../../common/timeline/TimeLine";
@@ -13,9 +13,9 @@ class ExperienceTimeLine extends React.Component{
             <TimeLine timeLineId={'experience-timeline'}>
                 <TimeLineContent>
                     <TimeLineLeft styleName={'content-left pad-left-80'}>
-                        <ExperiencePosition employer={'Strata Health Solutions'}
-                                            position={'Software Developer'}
-                                            timePeriod={'July 2016 - Present'}/>
+                        <TimeLinePoint organization={'Strata Health Solutions'}
+                                       detail={'Software Developer'}
+                                       timePeriod={'July 2016 - Present'}/>
                     </TimeLineLeft>
                     <TimeLineRight>
                         <ul>
@@ -72,9 +72,9 @@ class ExperienceTimeLine extends React.Component{
 
                 <TimeLineContent>
                     <TimeLineRight>
-                        <ExperiencePosition employer={'Calgary Prairie Rose Progress Club'}
-                                            position={'Web Developer'}
-                                            timePeriod={'November 2015 - Present'}/>
+                        <TimeLinePoint organization={'Calgary Prairie Rose Progress Club'}
+                                       detail={'Web Developer'}
+                                       timePeriod={'November 2015 - Present'}/>
                     </TimeLineRight>
                     <TimeLineLeft>
                         <ExperienceLeftUlTag/>
