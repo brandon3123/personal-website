@@ -21,15 +21,15 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import {makeStyles, useTheme} from "@material-ui/core/styles";
 import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
-import About from "./about/About";
-import Experience from "./experience/Experience";
-import Projects from "./projects/Projects";
-import Skills from "./skills/Skills";
-import Qualifications from "./qualifications/Qualifications";
-import ContactMe from "./contact/ContactMe";
+import About from "../about/About";
+import Experience from "../experience/Experience";
+import Projects from "../projects/Projects";
+import Skills from "../skills/Skills";
+import Qualifications from "../qualifications/Qualifications";
+import ContactMe from "../contact/ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
-import NotFound from "./NotFound";
-import BannerImage from "../images/coding-background.jpg"
+import NotFound from "../errors/NotFound";
+import BannerImage from "../../images/coding-background.jpg"
 
 const drawerWidth = 215;
 
