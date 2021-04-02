@@ -19,23 +19,18 @@ class IDEAndTools extends React.Component {
 
     render() {
         return (
-            <SkillsSection
-                title={'IDE\'s/Tools'}
-                skills={
-                    [
-                        <Skill skill={'IntelliJ'} icon={intellij}/>,
-                        <Skill skill={'PyCharm'} icon={pycharm}/>,
-                        <Skill skill={'WebStorm'} icon={webstorm}/>,
-                        <Skill skill={'DataGrip'} icon={dataGrip}/>,
-                        <Skill skill={'Eclipse'} icon={eclipse}/>,
-                        <Skill skill={'NetBeans'} icon={netbeans}/>,
-                        <Skill skill={'Jira'} icon={jira}/>,
-                        <Skill skill={'Bitbucket'} icon={bitbucket}/>,
-                        <Skill skill={'Confluence'} icon={confluence}/>,
-                        <Skill skill={'Bamboo'} icon={bamboo}/>
-                    ]
-                }
-            />
+            <SkillsSection title={'IDE\'s/Tools'}>
+                <Skill skill={'IntelliJ'} icon={intellij}/>
+                <Skill skill={'PyCharm'} icon={pycharm}/>
+                <Skill skill={'WebStorm'} icon={webstorm}/>
+                <Skill skill={'DataGrip'} icon={dataGrip}/>
+                <Skill skill={'Eclipse'} icon={eclipse}/>
+                <Skill skill={'NetBeans'} icon={netbeans}/>
+                <Skill skill={'Jira'} icon={jira}/>
+                <Skill skill={'Bitbucket'} icon={bitbucket}/>
+                <Skill skill={'Confluence'} icon={confluence}/>
+                <Skill skill={'Bamboo'} icon={bamboo}/>
+            </SkillsSection>
         )
     }
 }

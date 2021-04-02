@@ -13,16 +13,11 @@ class Databases extends React.Component {
 
     render() {
         return (
-            <SkillsSection
-                title={'Databases'}
-                skills={
-                    [
-                        <Skill skill={'Oracle'} icon={oracle}/>,
-                        <Skill skill={'Postgres'} icon={postgres}/>,
-                        <Skill skill={'MySQL'} icon={mysql}/>
-                    ]
-                }
-            />
+            <SkillsSection title={'Databases'}>
+                <Skill skill={'Oracle'} icon={oracle}/>
+                <Skill skill={'Postgres'} icon={postgres}/>
+                <Skill skill={'MySQL'} icon={mysql}/>
+            </SkillsSection>
         )
     }
 }

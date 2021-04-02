@@ -18,7 +18,7 @@ class SkillsSection extends React.Component {
                     </Typography>
                     <br/>
                     <Grid container>
-                        {this.props.skills}
+                        {this.props.children}
                     </Grid>
                 </CardContent>
             </Card>

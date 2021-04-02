@@ -12,16 +12,11 @@ class OperatingSystems extends React.Component {
 
     render() {
         return (
-            <SkillsSection
-                title={'Operating Systems'}
-                skills={
-                    [
-                        <Skill skill={'Mac OS'} icon={macOS}/>,
-                        <Skill skill={'Linux'} icon={linux}/>,
-                        <Skill skill={'Windows'} icon={windows}/>
-                    ]
-                }
-            />
+            <SkillsSection title={'Operating Systems'}>
+                <Skill skill={'Mac OS'} icon={macOS}/>
+                <Skill skill={'Linux'} icon={linux}/>
+                <Skill skill={'Windows'} icon={windows}/>
+            </SkillsSection>
         )
     }
 }

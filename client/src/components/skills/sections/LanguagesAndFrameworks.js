@@ -32,36 +32,31 @@ class LanguagesAndFrameworks extends React.Component {
 
     render() {
         return (
-            <SkillsSection
-                title={'Languages/Frameworks'}
-                skills={
-                    [
-                        <Skill skill={'Java'} icon={java}/>,
-                        <Skill skill={'Spring'} icon={spring}/>,
-                        <Skill skill={<>Spring<br/>Security</>} icon={springSecurity}/>,
-                        <Skill skill={<>Prime<br/>Faces</>} icon={primeFaces}/>,
-                        <Skill skill={'JAX-RS'} icon={jaxrs}/>,
-                        <Skill skill={'Spock'} icon={spock}/>,
-                        <Skill skill={'OpenID'} icon={oidc}/>,
-                        <Skill skill={'OAuth2'} icon={oauth2}/>,
-                        <Skill skill={'SAML2'} icon={saml}/>,
-                        <Skill skill={'Git'} icon={git}/>,
-                        <Skill skill={'SQL'} icon={sql}/>,
-                        <Skill skill={'PL/SQL'} icon={plsql}/>,
-                        <Skill skill={'JSON'} icon={json}/>,
-                        <Skill skill={'XML'} icon={xml}/>,
-                        <Skill skill={'LDAP'} icon={ldap}/>,
-                        <Skill skill={'Tomcat'} icon={tomcat}/>,
-                        <Skill skill={'HTML'} icon={html}/>,
-                        <Skill skill={'CSS'} icon={css}/>,
-                        <Skill skill={'JavaScript'} icon={javaScript}/>,
-                        <Skill skill={'React'} icon={reactIcon}/>,
-                        <Skill skill={'Node JS'} icon={node}/>,
-                        <Skill skill={'Python'} icon={python}/>,
-                        <Skill skill={'Bash'} icon={bash}/>
-                    ]
-                }
-            />
+            <SkillsSection title={'Languages/Frameworks'}>
+                <Skill skill={'Java'} icon={java}/>
+                <Skill skill={'Spring'} icon={spring}/>
+                <Skill skill={<>Spring<br/>Security</>} icon={springSecurity}/>
+                <Skill skill={<>Prime<br/>Faces</>} icon={primeFaces}/>
+                <Skill skill={'JAX-RS'} icon={jaxrs}/>
+                <Skill skill={'Spock'} icon={spock}/>
+                <Skill skill={'OpenID'} icon={oidc}/>
+                <Skill skill={'OAuth2'} icon={oauth2}/>
+                <Skill skill={'SAML2'} icon={saml}/>
+                <Skill skill={'Git'} icon={git}/>
+                <Skill skill={'SQL'} icon={sql}/>
+                <Skill skill={'PL/SQL'} icon={plsql}/>
+                <Skill skill={'JSON'} icon={json}/>
+                <Skill skill={'XML'} icon={xml}/>
+                <Skill skill={'LDAP'} icon={ldap}/>
+                <Skill skill={'Tomcat'} icon={tomcat}/>
+                <Skill skill={'HTML'} icon={html}/>
+                <Skill skill={'CSS'} icon={css}/>
+                <Skill skill={'JavaScript'} icon={javaScript}/>
+                <Skill skill={'React'} icon={reactIcon}/>
+                <Skill skill={'Node JS'} icon={node}/>
+                <Skill skill={'Python'} icon={python}/>
+                <Skill skill={'Bash'} icon={bash}/>
+            </SkillsSection>
         )
     }
 }

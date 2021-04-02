@@ -14,17 +14,12 @@ class CloudAndVirtualization extends React.Component {
 
     render() {
         return (
-            <SkillsSection
-                title={'Cloud/Virtualization'}
-                skills={
-                    [
-                        <Skill skill={'AWS'} icon={aws} iconStyles={'awsSkillIcon'}/>,
-                        <Skill skill={'Parallels'} icon={parallels}/>,
-                        <Skill skill={'Virtual Box'} icon={virtualBox}/>,
-                        <Skill skill={'VMware'} icon={vmware}/>
-                    ]
-                }
-            />
+            <SkillsSection title={'Cloud/Virtualization'}>
+                <Skill skill={'AWS'} icon={aws} iconStyles={'awsSkillIcon'}/>
+                <Skill skill={'Parallels'} icon={parallels}/>
+                <Skill skill={'Virtual Box'} icon={virtualBox}/>
+                <Skill skill={'VMware'} icon={vmware}/>
+            </SkillsSection>
         )
     }
 }
