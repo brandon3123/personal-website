@@ -10,7 +10,7 @@ import TimeLine from "../../common/timeline/TimeLine";
 class ExperienceTimeLine extends React.Component{
     render() {
         return (
-            <TimeLine>
+            <TimeLine timeLineId={'experience-timeline'}>
                 <TimeLineContent>
                     <TimeLineLeft styleName={'content-left pad-left-80'}>
                         <ExperiencePosition employer={'Strata Health Solutions'}

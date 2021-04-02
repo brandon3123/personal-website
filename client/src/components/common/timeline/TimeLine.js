@@ -8,7 +8,7 @@ class TimeLine extends React.Component{
 
     render() {
         return (
-            <section id="experience-timeline" className={'time-line-section'}>
+            <section id={this.props.timeLineId || 'conference-timeline'} className={'time-line-section'}>
                 <div className="conference-center-line"></div>
                 <div className="experience-timeline-content">
                     {this.props.children}

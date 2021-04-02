@@ -25,7 +25,7 @@ import About from "./about/About";
 import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
-import Qualifications from "./Qualifications";
+import Qualifications from "./qualifications/Qualifications";
 import ContactMe from "./ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import NotFound from "./NotFound";
