@@ -1,13 +1,12 @@
 import React from 'react';
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import Divider from "@material-ui/core/Divider";
 import LanguagesAndFrameworks from "./sections/LanguagesAndFrameworks";
 import Databases from "./sections/Databases";
 import IDEAndTools from "./sections/IDEAndTools";
 import OperatingSystems from "./sections/OperatingSystems";
 import CloudAndVirtualization from "./sections/CloudAndVirtualization";
+import PageHeader from "../common/PageHeader";
 
 class Skills extends React.Component {
     componentDidMount() {
@@ -16,10 +15,7 @@ class Skills extends React.Component {
 
     render() {
         return <Container className={'pageContainer'}>
-            <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
-                Skills
-            </Typography>
-            <Divider className={'centerDivider'}/>
+            <PageHeader title={'Skills'} styleName={'experienceHeader'}/>
             <Grid spacing={2} className={'skillsGrid'} direction={"column"} container>
                 <Grid item>
                     <LanguagesAndFrameworks/>
