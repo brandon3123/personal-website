@@ -1,22 +1,20 @@
-import React from 'react'
-import axios from "axios";
-import Container from "@material-ui/core/Container";
+import React from 'react';
 import {DataGrid} from "@material-ui/data-grid";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
-import {Hidden} from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import axios from "axios";
 
-class Projects extends React.Component {
-
+class ProjectsTable extends React.Component{
     state = {
         rows: [],
         loadingProjects: true
     }
 
+    constructor(props) {
+        super(props);
+    }
+
     componentDidMount() {
-        window.scrollTo(0, 0)
         this.fetchProjects()
     }
 
@@ -44,30 +42,19 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <Container className={'pageContainer'}>
-                <Typography variant={"h2"} className={'experienceHeader headerFont'} align={"center"}>
-                    Projects
-                </Typography>
-                <Divider className={'centerDivider'}/>
-                <Hidden lgUp>
-                    <Typography variant={"p"} className={'scrollForDetails headerFont'} align={"center"}>
-                        <i>Scroll for more details</i>
-                    </Typography>
-                </Hidden>
-                <DataGrid className={'projectsTable'}
-                          columns={this.props.columns}
-                          loading={this.state.loadingProjects}
-                          rows={this.state.rows}
-                          pageSize={10}
-                          autoHeight={true}
-                          disableSelectionOnClick={true}
-                />
-            </Container>
+            <DataGrid className={'projectsTable'}
+                      columns={this.props.columns}
+                      loading={this.state.loadingProjects}
+                      rows={this.state.rows}
+                      pageSize={10}
+                      autoHeight={true}
+                      disableSelectionOnClick={true}
+            />
         )
     }
 }
 
-Projects.defaultProps = {
+ProjectsTable.defaultProps = {
     username: 'brandon3123',
     columns: [
         {field: 'id', headerName: 'ID', hide: true},
@@ -111,4 +98,4 @@ Projects.defaultProps = {
     ]
 }
 
-export default Projects;
+export default ProjectsTable;

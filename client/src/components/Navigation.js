@@ -23,7 +23,7 @@ import {makeStyles, useTheme} from "@material-ui/core/styles";
 import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
 import About from "./about/About";
 import Experience from "./experience/Experience";
-import Projects from "./Projects";
+import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 import Qualifications from "./Qualifications";
 import ContactMe from "./ContactMe";
