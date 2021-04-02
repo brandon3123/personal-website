@@ -33,7 +33,6 @@ class Skills extends React.Component {
                 <Grid item>
                    <OperatingSystems/>
                 </Grid>
-
                 <Grid item>
                     <CloudAndVirtualization/>
                 </Grid>
