@@ -21,7 +21,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import {makeStyles, useTheme} from "@material-ui/core/styles";
 import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
-import About from "./About";
+import About from "./about/About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./skills/Skills";
