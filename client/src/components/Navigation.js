@@ -24,7 +24,7 @@ import {Switch, Route, Link, BrowserRouter} from "react-router-dom";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
-import Skills from "./Skills";
+import Skills from "./skills/Skills";
 import Qualifications from "./Qualifications";
 import ContactMe from "./ContactMe";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
