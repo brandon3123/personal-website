@@ -1,11 +1,11 @@
 import React from 'react';
 import ExperienceLeftUlTag from "../shared/ExperienceLeftUlTag";
-import TimeLineContent from "../../timeline/TimeLineContent";
-import TimeLineLeft from "../../timeline/TimeLineLeft";
+import TimeLineContent from "../../common/timeline/TimeLineContent";
+import TimeLineLeft from "../../common/timeline/TimeLineLeft";
 import ExperiencePosition from "../shared/ExperiencePosition";
-import TimeLineRight from "../../timeline/TimeLineRight";
+import TimeLineRight from "../../common/timeline/TimeLineRight";
 import ExperienceListItem from "../shared/ExperienceListItem";
-import TimeLine from "../../timeline/TimeLine";
+import TimeLine from "../../common/timeline/TimeLine";
 
 class ExperienceTimeLine extends React.Component{
     render() {
