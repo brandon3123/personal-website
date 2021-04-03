@@ -294,6 +294,12 @@ body {
 
 }
 
+@media only screen and (max-width: 450px) {
+    .time-line-ul {
+        padding-inline-start: 0;
+    }
+}
+
 .App {
     text-align: center;
 }

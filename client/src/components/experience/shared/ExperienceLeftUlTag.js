@@ -7,7 +7,7 @@ export const ExperienceLeftUlTag = () =>  {
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <ul className={isSmallScreen ? '' : 'rtlList'}>
+        <ul className={isSmallScreen ? 'time-line-ul' : 'rtlList'}>
             <ExperienceListItem>
                 On-going contract position. Providing timely and efficient website maintenance
             </ExperienceListItem>
