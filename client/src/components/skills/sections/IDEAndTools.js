@@ -13,10 +13,6 @@ import netbeans from "../../../images/skills/netbeans.png"
 import bamboo from "../../../images/skills/bamboo.png"
 
 class IDEAndTools extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <SkillsSection title={'IDE\'s/Tools'}>

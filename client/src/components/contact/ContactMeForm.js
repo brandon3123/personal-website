@@ -9,16 +9,12 @@ import Alert from "@material-ui/lab/Alert";
 
 class ContactMeForm extends React.Component{
     state = {
-        emailAddress: null,
-        emailMessage: null,
-        name: null,
+        emailAddress: "",
+        emailMessage: "",
+        name: "",
         showAlert: false,
         alertType: "",
         alertMessage: ""
-    }
-
-    constructor(props) {
-        super(props);
     }
 
     showAlert(type, message) {

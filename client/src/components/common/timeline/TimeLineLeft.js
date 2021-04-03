@@ -1,10 +1,6 @@
 import React from 'react';
 
 class TimeLineLeft extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="content-left-container">
@@ -14,7 +10,6 @@ class TimeLineLeft extends React.Component{
             </div>
         );
     }
-
 }
 
 export default TimeLineLeft;

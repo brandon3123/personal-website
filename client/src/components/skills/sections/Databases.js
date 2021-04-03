@@ -6,11 +6,6 @@ import mysql from "../../../images/skills/mysql.png"
 import postgres from "../../../images/skills/postGres.png"
 
 class Databases extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <SkillsSection title={'Databases'}>

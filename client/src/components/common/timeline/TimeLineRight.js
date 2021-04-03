@@ -1,10 +1,6 @@
 import React from 'react';
 
 class TimeLineRight extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="content-right-container">

@@ -10,10 +10,6 @@ class ProjectsTable extends React.Component{
         loadingProjects: true
     }
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         this.fetchProjects()
     }

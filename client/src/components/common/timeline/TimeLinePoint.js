@@ -2,10 +2,6 @@ import React from 'react';
 import Typography from "@material-ui/core/Typography";
 
 class TimeLinePoint extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>

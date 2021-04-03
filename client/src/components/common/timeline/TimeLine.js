@@ -1,11 +1,6 @@
 import React from 'react';
 
 class TimeLine extends React.Component{
-    constructor(props) {
-        super(props);
-
-    }
-
     render() {
         return (
             <section id={this.props.timeLineId || 'conference-timeline'} className={'time-line-section'}>
@@ -16,7 +11,6 @@ class TimeLine extends React.Component{
             </section>
         );
     }
-
 }
 
 export default TimeLine;

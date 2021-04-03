@@ -6,10 +6,6 @@ import windows from "../../../images/skills/windows.png"
 import linux from "../../../images/skills/linux.png"
 
 class OperatingSystems extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <SkillsSection title={'Operating Systems'}>

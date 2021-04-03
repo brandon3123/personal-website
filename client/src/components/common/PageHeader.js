@@ -3,10 +3,6 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 
 class PageHeader extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>

@@ -12,11 +12,11 @@ class About extends React.Component {
     render() {
         return (
             <Container className={'aboutMeContainer'}>
-                <Grid container alignItems={"center"} justify={"center"} alignContent={"center"}>
+                <Grid container alignItems={"center"} justify={"center"}>
                     <Grid item lg={4}>
                         <AboutMugShot/>
                     </Grid>
-                    <Grid item lg={8} xs={12} alignItems={"center"} alignContent={"center"}>
+                    <Grid item lg={8} xs={12}>
                         <AboutContent/>
                     </Grid>
                 </Grid>

@@ -6,10 +6,6 @@ import TimeLineLeft from "../../common/timeline/TimeLineLeft";
 import TimeLinePoint from "../../common/timeline/TimeLinePoint";
 
 class QualificationsTimeLine extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <TimeLine>

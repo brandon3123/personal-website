@@ -7,11 +7,6 @@ import vmware from "../../../images/skills/vmware.png"
 import aws from "../../../images/skills/aws.png"
 
 class CloudAndVirtualization extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <SkillsSection title={'Cloud/Virtualization'}>

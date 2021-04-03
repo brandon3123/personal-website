@@ -4,10 +4,6 @@ import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
 
 class Skill extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let iconStyle = this.props.iconStyles ? this.props.iconStyles : 'skillsIcon';
         return (

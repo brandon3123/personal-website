@@ -5,10 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 
 class SkillsSection extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Card>
@@ -24,7 +20,6 @@ class SkillsSection extends React.Component {
             </Card>
         )
     }
-
 }
 
 export default SkillsSection;

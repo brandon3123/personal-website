@@ -26,10 +26,6 @@ import plsql from "../../../images/skills/plsql.png"
 import jaxrs from "../../../images/skills/jaxrs.png"
 
 class LanguagesAndFrameworks extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <SkillsSection title={'Languages/Frameworks'}>
