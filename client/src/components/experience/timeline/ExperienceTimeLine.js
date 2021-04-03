@@ -18,7 +18,7 @@ class ExperienceTimeLine extends React.Component{
                                        timePeriod={'July 2016 - Present'}/>
                     </TimeLineLeft>
                     <TimeLineRight>
-                        <ul className={'time-line-ul'}>
+                        <ul className={'pad-line-start-sm-0'}>
                             <ExperienceListItem>
                                 Full stack developer on the Integration, Dev-Ops & Product development
                                 teams. Responsible for end-to-end application development, utilizing
