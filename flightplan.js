@@ -6,7 +6,7 @@ dotenv.config();
 const serverCredentials = {
     host: process.env.HOST,
     username: process.env.USERNAME,
-    password: process.env.PASSWORD
+    sshAgent: process.env.SSH_AUTH_SOCK
 }
 
 const tmpDir = appName + '-' + new Date().toISOString().substring(0, 10)
@@ -15,8 +15,7 @@ plan.target('deploy', [
     {
         host: serverCredentials.host,
         username: serverCredentials.username,
-        // password: process.env.SSH_AUTH_SOCK
-        password: serverCredentials.password
+        agent: serverCredentials.sshAgent
     }
 ]);
 
