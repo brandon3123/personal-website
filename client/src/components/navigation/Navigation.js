@@ -178,7 +178,7 @@ function ResponsiveDrawer(props) {
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
-                            href={'https://linkedin.com/in/brandon-n-0128a144'}
+                            href={'https://linkedin.com/in/brandon-nolan-0128a144'}
                             target={'_blank'}
                         >
                             <LinkedInIcon className={classes.socialLinkIcon}/>
