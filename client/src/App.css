@@ -388,11 +388,19 @@ body {
     margin-bottom: 25px;
 }
 
-.projectsTable .githubLink:hover {
-    color: #0a3d62;
-    background-color: transparent;
-    border: 3px solid #0a3d62;
-    transition: 0.3s;
+.githubLink {
+    color: white !important;
+    background-color: #0a3d62 !important;
+    height: 40px !important;
+    width: 40px !important;
+    float: right !important;
+}
+
+.githubLink:hover {
+    color: #0a3d62 !important;
+    background-color: white !important;
+    border: 3px solid #0a3d62 !important;
+    transition: 0.3s !important;
 }
 
 .contactGrid {
@@ -446,18 +454,12 @@ body {
     justify-content: center;
 }
 
-.projectsTable .githubLink {
-    color: white;
-    background-color: #0a3d62;
-    height: 40px;
-    width: 40px;
-}
-
-.projectsTableHeader {
+.projectCardFooter {
     color: #0a3d62;
     font-family: 'Overpass', sans-serif;
     background-color: #d4d8dd;
     font-size: 17px;
+    justify-content: end;
 }
 
 #vertical-tabpanel-1 > div > div > div:nth-child(n) > div > div.MuiDataGrid-mainGridContainer > div.MuiDataGrid-columnsContainer > div > div:nth-child(n) > div.MuiDataGrid-columnSeparator > svg {
