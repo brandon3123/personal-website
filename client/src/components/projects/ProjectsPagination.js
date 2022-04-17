@@ -26,8 +26,31 @@ function ProjectsPagination() {
     const md = useMediaQuery(theme.breakpoints.down("md"));
 
     useEffect(() => {
+        const fetchProjects = () => {
+            axios
+                .get('https://api.github.com/users/brandon3123/repos?sort=updated')
+                .then(result => {
+                        setProjects(
+                            result.data.map((repo) => {
+                                return {
+                                    id: repo.id,
+                                    name: repo.name,
+                                    description: repo.description,
+                                    language: repo.language,
+                                    creationDate: repo.created_at.substr(0, 10),
+                                    repo: repo.html_url
+                                }
+                            })
+                        );
+                        setNumOfPages(Math.ceil(result.data.length / perPage));
+                    }
+                ).catch(error => {
+                console.log('Error fetching github repos: ' + error)
+            })
+        }
+
         fetchProjects();
-    }, [])
+    }, [perPage])
 
     useEffect(() => {
         determineProjectsPerPage();
@@ -38,7 +61,7 @@ function ProjectsPagination() {
         window.scrollTo(0, 0);
     };
 
-    function determineProjectsPerPage() {
+    const determineProjectsPerPage = () => {
         if (xs || sm) {
             setPerPage(3);
         } else if (md) {
@@ -46,28 +69,6 @@ function ProjectsPagination() {
         } else {
             setPerPage(9);
         }
-    }
-
-    const fetchProjects = () => {
-        axios
-            .get('https://api.github.com/users/brandon3123/repos?sort=updated')
-            .then(result => {
-                    setProjects(
-                        result.data.map((repo) => {
-                            return {
-                                name: repo.name,
-                                description: repo.description,
-                                language: repo.language,
-                                creationDate: repo.created_at.substr(0, 10),
-                                repo: repo.html_url
-                            }
-                        })
-                    );
-                    setNumOfPages(Math.ceil(result.data.length / perPage));
-                }
-            ).catch(error => {
-            console.log('Error fetching github repos: ' + error)
-        })
     }
 
     return (
@@ -78,7 +79,7 @@ function ProjectsPagination() {
                         .slice((currentPage - 1) * perPage, currentPage * perPage)
                         .map(project => {
                             return (
-                                <Grid item xl={4} lg={4} md={6} sm={12} xs={12} className={'displayFlex'}>
+                                <Grid item key={project.id} xl={4} lg={4} md={6} sm={12} xs={12} className={'displayFlex'}>
                                     <Card className={'projectCard displayFlex'}>
                                         <CardContent>
                                             <Typography className={'headerFont'} variant={'h5'}>
