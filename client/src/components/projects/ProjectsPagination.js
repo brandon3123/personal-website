@@ -26,6 +26,19 @@ function ProjectsPagination() {
     const md = useMediaQuery(theme.breakpoints.down("md"));
 
     useEffect(() => {
+        fetchProjects();
+    }, [])
+
+    useEffect(() => {
+        determineProjectsPerPage();
+    })
+
+    const handleChange = (event, value) => {
+        setCurrentPage(value);
+        window.scrollTo(0, 0);
+    };
+
+    function determineProjectsPerPage() {
         if (xs || sm) {
             setPerPage(3);
         } else if (md) {
@@ -33,14 +46,9 @@ function ProjectsPagination() {
         } else {
             setPerPage(9);
         }
-        fetchProjects()
-    })
+    }
 
-    const handleChange = (event, value) => {
-        setCurrentPage(value);
-    };
-
-    function fetchProjects() {
+    const fetchProjects = () => {
         axios
             .get('https://api.github.com/users/brandon3123/repos?sort=updated')
             .then(result => {
@@ -58,44 +66,45 @@ function ProjectsPagination() {
                     setNumOfPages(Math.ceil(result.data.length / perPage));
                 }
             ).catch(error => {
-            this.setState({loadingProjects: false})
             console.log('Error fetching github repos: ' + error)
         })
     }
 
     return (
-        <div>
+        <>
             <Container>
-                <Grid spacing={4} className={'skillsGrid'} container>
+                <Grid spacing={4} className={'projectsGrid'} container>
                     {projects
                         .slice((currentPage - 1) * perPage, currentPage * perPage)
                         .map(project => {
                             return (
-                                <Grid item xl={4} lg={4} md={6} sm={12} xs={12} style={{display: 'flex'}}>
-                                    <Card style={{
-                                        width: '100%',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        justifyContent: 'space-between'
-                                    }}>
+                                <Grid item xl={4} lg={4} md={6} sm={12} xs={12} className={'displayFlex'}>
+                                    <Card className={'projectCard displayFlex'}>
                                         <CardContent>
                                             <Typography className={'headerFont'} variant={'h5'}>
                                                 {project.name}
                                             </Typography>
-                                            <Typography style={{opacity: 0.6}} className={'headerFont'}
+                                            <Typography className={'headerFont opacity-0-6'}
                                                         variant={'h6'}>
                                                 {project.creationDate}
                                             </Typography>
+                                            <Typography className={'headerFont opacity-0-6'}
+                                                        variant={'h6'}>
+                                                {project.language || <br/>}
+                                            </Typography>
                                             <Divider/>
                                             <Typography className={'informationFont experienceText'}>
-                                                <><br/></>
+                                                <br/>
                                                 {project.description}
                                             </Typography>
                                         </CardContent>
                                         <CardActionArea>
                                             <CardActions className={'projectCardFooter'}>
-                                                <IconButton className={'githubLink'} href={project.repo}
-                                                            target={'_blank'}><GitHubIcon/></IconButton>
+                                                <IconButton className={'githubLink'}
+                                                            href={project.repo}
+                                                            target={'_blank'}>
+                                                    <GitHubIcon/>
+                                                </IconButton>
                                             </CardActions>
                                         </CardActionArea>
                                     </Card>
@@ -105,22 +114,21 @@ function ProjectsPagination() {
                 </Grid>
             </Container>
             <Container>
-                <Grid className={'skillsGrid'} justify={"center"} alignItems={"center"} container>
+                <Grid className={'projectsGrid'} justify={"center"} alignItems={"center"} container>
                     <Grid item>
                         <Pagination
                             count={numOfPages}
                             page={currentPage}
                             onChange={handleChange}
                             shape={"rounded"}
-                            size="large"
+                            size={"large"}
                             showFirstButton
                             showLastButton
                         />
                     </Grid>
                 </Grid>
-
             </Container>
-        </div>
+        </>
     )
 }
 

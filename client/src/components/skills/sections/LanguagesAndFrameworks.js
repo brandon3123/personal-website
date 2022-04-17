@@ -3,6 +3,7 @@ import Skill from "../shared/Skill";
 import java from "../../../images/skills/java.png";
 import SkillsSection from "../shared/SkillsSection";
 import spring from "../../../images/skills/spring.png"
+import scala from "../../../images/skills/scala.png"
 import springSecurity from "../../../images/skills/springSecurity.png"
 import sql from "../../../images/skills/sql.png"
 import html from "../../../images/skills/html-5.png"
@@ -33,6 +34,7 @@ class LanguagesAndFrameworks extends React.Component {
                 <Skill skill={'Spring'} icon={spring}/>
                 <Skill skill={<>Spring<br/>Security</>} icon={springSecurity}/>
                 <Skill skill={<>Prime<br/>Faces</>} icon={primeFaces}/>
+                <Skill skill={'Scala'} icon={scala}/>
                 <Skill skill={'JAX-RS'} icon={jaxrs}/>
                 <Skill skill={'Spock'} icon={spock}/>
                 <Skill skill={'OpenID'} icon={oidc}/>

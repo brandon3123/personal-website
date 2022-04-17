@@ -388,19 +388,37 @@ body {
     margin-bottom: 25px;
 }
 
-.githubLink {
-    color: white !important;
-    background-color: #0a3d62 !important;
-    height: 40px !important;
-    width: 40px !important;
-    float: right !important;
+.projectsGrid {
+    padding-top: 25px;
+}
+
+.projectCard {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.opacity-0-6 {
+    opacity: 0.6;
+}
+
+.projectsGrid .githubLink {
+    color: white;
+    background-color: #0a3d62;
+    height: 40px;
+    width: 40px;
+    float: right;
 }
 
 .githubLink:hover {
-    color: #0a3d62 !important;
-    background-color: white !important;
-    border: 3px solid #0a3d62 !important;
-    transition: 0.3s !important;
+    color: #0a3d62;
+    background-color: white;
+    border: 3px solid #0a3d62;
+    transition: 0.3s;
 }
 
 .contactGrid {

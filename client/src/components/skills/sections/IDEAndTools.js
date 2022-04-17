@@ -11,6 +11,7 @@ import bitbucket from "../../../images/skills/bitbucket.png"
 import eclipse from "../../../images/skills/eclipse.png"
 import netbeans from "../../../images/skills/netbeans.png"
 import bamboo from "../../../images/skills/bamboo.png"
+import jenkins from "../../../images/skills/jenkins.png"
 
 class IDEAndTools extends React.Component {
     render() {
@@ -26,6 +27,7 @@ class IDEAndTools extends React.Component {
                 <Skill skill={'Bitbucket'} icon={bitbucket}/>
                 <Skill skill={'Confluence'} icon={confluence}/>
                 <Skill skill={'Bamboo'} icon={bamboo}/>
+                <Skill skill={'Jenkins'} icon={jenkins}/>
             </SkillsSection>
         )
     }
