@@ -16,6 +16,7 @@ import {useTheme} from "@material-ui/core/styles";
 
 function ProjectsPagination() {
     const [projects, setProjects] = useState([]);
+    const [currentPageContent, setCurrentPageContent] = useState([]);
     const [numOfPages, setNumOfPages] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [perPage, setPerPage] = useState(9);
@@ -42,7 +43,6 @@ function ProjectsPagination() {
                                 }
                             })
                         );
-                        setNumOfPages(Math.ceil(result.data.length / perPage));
                     }
                 ).catch(error => {
                 console.log('Error fetching github repos: ' + error)
@@ -50,11 +50,22 @@ function ProjectsPagination() {
         }
 
         fetchProjects();
-    }, [perPage])
+    }, [])
 
     useEffect(() => {
         determineProjectsPerPage();
     })
+
+    useEffect(() => {
+        setCurrentPageContent(projects.slice((currentPage - 1) * perPage, currentPage * perPage))
+        setNumOfPages(Math.ceil(projects.length / perPage));
+    }, [currentPage, perPage, projects])
+
+    useEffect(() => {
+        if (numOfPages > 0 && currentPage > numOfPages) {
+            setCurrentPage(numOfPages)
+        }
+    }, [currentPage, numOfPages])
 
     const handleChange = (event, value) => {
         setCurrentPage(value);
@@ -75,8 +86,7 @@ function ProjectsPagination() {
         <>
             <Container>
                 <Grid spacing={4} className={'projectsGrid'} container>
-                    {projects
-                        .slice((currentPage - 1) * perPage, currentPage * perPage)
+                    {currentPageContent
                         .map(project => {
                             return (
                                 <Grid item key={project.id} xl={4} lg={4} md={6} sm={12} xs={12} className={'displayFlex'}>
