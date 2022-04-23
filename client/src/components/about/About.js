@@ -13,10 +13,10 @@ class About extends React.Component {
         return (
             <Container className={'aboutMeContainer'}>
                 <Grid container alignItems={"center"} justify={"center"}>
-                    <Grid item lg={4}>
+                    <Grid item lg={5}>
                         <AboutMugShot/>
                     </Grid>
-                    <Grid item lg={8} xs={12}>
+                    <Grid item lg={7} xs={12}>
                         <AboutContent/>
                     </Grid>
                 </Grid>
