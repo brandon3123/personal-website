@@ -7,64 +7,61 @@ import TimeLineRight from "../../common/timeline/TimeLineRight";
 import ExperienceListItem from "../shared/ExperienceListItem";
 import TimeLine from "../../common/timeline/TimeLine";
 
-class ExperienceTimeLine extends React.Component{
+class ExperienceTimeLine extends React.Component {
     render() {
         return (
             <TimeLine timeLineId={'experience-timeline'}>
                 <TimeLineContent>
-                    <TimeLineLeft styleName={'content-left pad-left-80'}>
-                        <TimeLinePoint organization={'Strata Health Solutions'}
+                    <TimeLineLeft styleName={'content-left pad-left-110'}>
+                        <TimeLinePoint organization={'Hootsuite'}
                                        detail={'Software Developer'}
-                                       timePeriod={'July 2016 - Present'}/>
+                                       timePeriod={'July 2021 - Present'}/>
                     </TimeLineLeft>
                     <TimeLineRight>
                         <ul className={'pad-line-start-sm-0'}>
                             <ExperienceListItem>
-                                Full stack developer on the Integration, Dev-Ops & Product development
-                                teams. Responsible for end-to-end application development, utilizing
-                                <i className={'headerFont'}> Java, JSF, Spring, Spring-Security,
-                                    Spring-Boot, JPA, Maven, Oracle and Postgres.</i>
+                                Back-end developer on the Plan & Create team. Responsible for multiple repositories
+                                inside the Hootsuite micro-services
+                                architecture, leveraging
+                                <i className={'headerFont'}> Java/Scala, Akka, MySQL, Mongo, Cats, Monix, Jenkins.</i>
                             </ExperienceListItem>
                             <ExperienceListItem>
-                                Implemented an <i className={'headerFont'}>SSO</i> platform
-                                leveraging <i className={'headerFont'}>Spring Security/Boot</i>,
-                                allowing authentication/authorization by means of <i className={'headerFont'}>OAuth2/OIDC,
-                                LDAP, Active
-                                Directory, SAML 2</i>.
+                                Acted as an <i className={'headerFont'}>“Epic Champion”</i>, providing complete technical ownership for multiple
+                                projects. Releasing quality functionality to
+                                hundreds of thousands of users. Responsibilities included:
+                                <ul>
+                                    <ExperienceListItem>
+                                        Scoping technical requirements across all our back-end micro-services,
+                                        identifying limitations, performance concerns and
+                                        required functionality.
+                                    </ExperienceListItem>
+                                    <ExperienceListItem>
+                                        Effectively collaborating with other developers/product
+                                        managers/designers. Ensuring project cohesion and aligning
+                                        expectations.
+                                    </ExperienceListItem>
+                                    <ExperienceListItem>
+                                        Creating/grooming entire <i className={'headerFont'}>JIRA</i> epics/tickets. Ensuring all requirements are flushed out and estimated.
+                                    </ExperienceListItem>
+                                    <ExperienceListItem>
+                                        Creating extensive <i className={'headerFont'}>QA/UAT</i> plans. Effectively eliminating any major issues and surprises for releases.
+                                    </ExperienceListItem>
+                                </ul>
                             </ExperienceListItem>
                             <ExperienceListItem>
-                                Championed integration projects with external vendors by reviewing
-                                technical documentation and meeting with clients.
-                                Translating their business requirements into projects tailored to
-                                specification.
+                                Created automated <i className={'headerFont'}>API</i> integration tests for new and existing functionality.
                             </ExperienceListItem>
                             <ExperienceListItem>
-                                Provided day-to-day production support for client integration interfaces
-                                and applications across Canada, UK and USA. Addressing all issues found
-                                with efficient solutions or workarounds.
+                                Assumed the role of a technical coach for junior developers, providing mentor-ship/pair programming and general assistance to
+                                ensure their career development flourished.
                             </ExperienceListItem>
                             <ExperienceListItem>
-                                Developed and maintained exceptional <i className={'headerFont'}>REST
-                                API's</i>, leveraging <i className={'headerFont'}>Java, JavaScript,
-                                JSON, XML, TCP, HTTP, JAX-RS, Jersey and Rhapsody.</i>
+                                Contributed to the full stack development process by assisting on the front-end. Implementing new functionality and improving
+                                upon the existing code-base, leveraging <i className={'headerFont'}>React, Redux, TypeScript.</i>
                             </ExperienceListItem>
                             <ExperienceListItem>
-                                Created extensive documentation, including <i className={'headerFont'}>API
-                                Swagger</i> Docs, interface workflows/specifications and general
-                                'how-to' and training documentation for internal staff.
-                            </ExperienceListItem>
-                            <ExperienceListItem>
-                                Trained new staff and provided mentorship to existing team members.
-                                Sharing knowledge and expertise across the development team.
-                            </ExperienceListItem>
-                            <ExperienceListItem>
-                                Effectively practiced <i className={'headerFont'}>Agile</i> development
-                                methodologies, participating in daily stand-ups, sprint-kick offs and
-                                grooming sessions.
-                            </ExperienceListItem>
-                            <ExperienceListItem>
-                                Contributed to innovation through the migration of legacy code to modern
-                                frameworks.
+                                Triaged and addressed production issues, eliminating client frustrations and improving future processes with timely bug fixes
+                                and work arounds.
                             </ExperienceListItem>
                         </ul>
                     </TimeLineRight>
@@ -72,9 +69,9 @@ class ExperienceTimeLine extends React.Component{
 
                 <TimeLineContent>
                     <TimeLineRight>
-                        <TimeLinePoint organization={'Calgary Prairie Rose Progress Club'}
-                                       detail={'Web Developer'}
-                                       timePeriod={'November 2015 - Present'}/>
+                        <TimeLinePoint organization={'Strata Health Solutions'}
+                                       detail={'Software Developer'}
+                                       timePeriod={'July 2016 - July 2021'}/>
                     </TimeLineRight>
                     <TimeLineLeft>
                         <ExperienceLeftUlTag/>
