@@ -10,36 +10,36 @@ class QualificationsTimeLine extends React.Component{
         return (
             <TimeLine>
                 <TimeLineContent>
-                    <TimeLineRight>
+                    <TimeLineLeft>
                         <TimeLinePoint organization={'Amazon Web Services (AWS)'}
                                        detail={'AWS Certified Developer Associate Certificate'}
                                        timePeriod={'2021'}/>
-                    </TimeLineRight>
+                    </TimeLineLeft>
                 </TimeLineContent>
 
                 <TimeLineContent>
-                    <TimeLineLeft styleName={'content-left pad-left-70'}>
+                    <TimeLineRight styleName={'content-left pad-left-70'}>
                         <TimeLinePoint organization={'Oracle'}
                                        detail={'OCA, Java SE 8 Programmer Certificate'}
                                        timePeriod={'2018'}/>
-                    </TimeLineLeft>
-                </TimeLineContent>
-
-                <TimeLineContent>
-                    <TimeLineRight>
-                        <TimeLinePoint organization={'Southern Alberta Institute of Technology (SAIT)'}
-                                       detail={'IT - Software Development Diploma'}
-                                       timePeriod={'2014 - 2016'}/>
                     </TimeLineRight>
                 </TimeLineContent>
 
                 <TimeLineContent>
-                    <TimeLineLeft styleName={'content-left pad-left-70'}>
-                        <TimeLinePoint organization={'John G. Diefenbaker High School'}
-                                       detail={'High School Diploma'}
-                                       timePeriod={'2006 - 2009'}/>
+                    <TimeLineLeft>
+                        <TimeLinePoint organization={'Southern Alberta Institute of Technology (SAIT)'}
+                                       detail={'IT - Software Development Diploma'}
+                                       timePeriod={'2014 - 2016'}/>
                     </TimeLineLeft>
                 </TimeLineContent>
+
+                {/*<TimeLineContent>*/}
+                {/*    <TimeLineLeft styleName={'content-left pad-left-70'}>*/}
+                {/*        <TimeLinePoint organization={'John G. Diefenbaker High School'}*/}
+                {/*                       detail={'High School Diploma'}*/}
+                {/*                       timePeriod={'2006 - 2009'}/>*/}
+                {/*    </TimeLineLeft>*/}
+                {/*</TimeLineContent>*/}
             </TimeLine>
         )
     }

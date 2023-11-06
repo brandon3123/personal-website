@@ -25,12 +25,22 @@ import node from "../../../images/skills/node.png"
 import primeFaces from "../../../images/skills/primeFaces.png"
 import plsql from "../../../images/skills/plsql.png"
 import jaxrs from "../../../images/skills/jaxrs.png"
+import kotlin from "../../../images/skills/k.png"
+import terraform from "../../../images/skills/terraform.png"
+import kafka from "../../../images/skills/kafka.png"
+import docker from "../../../images/skills/docker.png"
+import k8 from "../../../images/skills/k8.png"
 
 class LanguagesAndFrameworks extends React.Component {
     render() {
         return (
             <SkillsSection title={'Languages/Frameworks'}>
                 <Skill skill={'Java'} icon={java}/>
+                <Skill skill={'Kotlin'} icon={kotlin}/>
+                <Skill skill={'Terraform'} icon={terraform}/>
+                <Skill skill={'Kafka'} icon={kafka}/>
+                <Skill skill={'Docker'} icon={docker}/>
+                <Skill skill={'Kubernetes'} icon={k8}/>
                 <Skill skill={'Spring'} icon={spring}/>
                 <Skill skill={<>Spring<br/>Security</>} icon={springSecurity}/>
                 <Skill skill={<>Prime<br/>Faces</>} icon={primeFaces}/>
