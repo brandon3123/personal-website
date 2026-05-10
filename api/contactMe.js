@@ -1,6 +1,13 @@
 const mailer = require('nodemailer');
 
 module.exports = async (req, res) => {
+    if (req.method === 'GET') {
+        const vars = ['EMAIL', 'OAUTH_CLIENT_ID', 'OAUTH_CLIENT_SECRET', 'OAUTH_ACCESS_TOKEN', 'OAUTH_REFRESH_TOKEN'];
+        const status = {};
+        vars.forEach(v => { status[v] = process.env[v] ? 'set' : 'MISSING'; });
+        return res.status(200).json(status);
+    }
+
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
