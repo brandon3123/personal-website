@@ -1,6 +1,5 @@
 import React from "react";
 import {useMediaQuery, useTheme} from "@material-ui/core";
-import ExperienceListItem from "./ExperienceListItem";
 
 export const ExperienceLeftUlTag = ({children}) =>  {
     const theme = useTheme();
