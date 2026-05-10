@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd client && NODE_OPTIONS=--openssl-legacy-provider npm run build",
+  "outputDirectory": "client/build",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

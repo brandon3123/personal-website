@@ -44,7 +44,7 @@ class ContactMeForm extends React.Component{
     submitEmail(e) {
         axios
             .post(
-                '/contactMe',
+                '/api/contactMe',
                 {
                     "name": this.state.name,
                     "emailAddress": this.state.emailAddress,
