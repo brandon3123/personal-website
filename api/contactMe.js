@@ -2,10 +2,7 @@ const mailer = require('nodemailer');
 
 module.exports = async (req, res) => {
     if (req.method === 'GET') {
-        const vars = ['EMAIL', 'OAUTH_CLIENT_ID', 'OAUTH_CLIENT_SECRET', 'OAUTH_ACCESS_TOKEN', 'OAUTH_REFRESH_TOKEN'];
-        const status = {};
-        vars.forEach(v => { status[v] = process.env[v] ? 'set' : 'MISSING'; });
-        return res.status(200).json(status);
+        return res.status(200).json({ status: 'ok' });
     }
 
     if (req.method !== 'POST') {
@@ -32,7 +29,6 @@ module.exports = async (req, res) => {
             user: email,
             clientId: process.env.OAUTH_CLIENT_ID,
             clientSecret: process.env.OAUTH_CLIENT_SECRET,
-            accessToken: process.env.OAUTH_ACCESS_TOKEN,
             refreshToken: process.env.OAUTH_REFRESH_TOKEN,
         }
     });
